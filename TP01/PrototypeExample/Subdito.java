@@ -55,7 +55,7 @@ public abstract class Subdito {
             "id: " + id + 
             ", hp: " + hp + "/" + maxHp +
             ", dmg: " + dmg +
-            ", bounty: " + bounty + " gokd" + 
+            ", bounty: " + bounty + " gold" + 
             ", mvSpeed: " + mvspeed +
             ", range: " + range + 
             ", armor: " + armor +
