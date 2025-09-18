@@ -1,0 +1,170 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-image: url(imagenes/fondo.webp);
+  background-size: cover;       /* la imagen cubre toda la pantalla */
+  background-repeat: no-repeat; /* que no se repita */
+  background-attachment: fixed; /* queda fija aunque hagas scroll */
+  background-position: center;  /* centrada */
+}
+
+header {
+  background: #104444;
+  color: white;
+  padding: 20px 35px;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+/* NAV (menú de enlaces) */
+.navtop {
+  display: flex;
+  align-items: center; /*centra el nav verticalmente*/
+  justify-content: space-between; /* separa logo y menú al máximo */
+  padding: 10px 20px;
+  margin: 5;
+  padding: 5;
+}
+/*logo principal*/
+.logo img {
+  height: 50px;     /* tamaño del logo */
+}
+/* Contenedor de los botones */
+.menu-botones {
+  display: flex;/* pone los botones uno al lado del otro */
+  gap: 10px; /* espacio entre botones */
+}
+
+.contenedor{
+     position: relative;
+     display: inline-block;
+     gap: 10px ; /* espacio entre botones*/
+}
+/* Botón del NAV*/
+    .btn {
+      padding: 8px 12px;
+      background: #070a0d;
+      color: white;
+      border: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+}
+.btn:hover {
+      background: #0056b3;
+}
+/* estilo de las listas desplegables de los botones*/
+.lista {
+      display: none; /* oculta por defecto */
+      position: absolute;
+      background: white;
+      color: black;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      margin-top: 5px;
+      padding: 0;
+      list-style: none;
+      z-index: 10;
+}
+/* cada item de la lista*/
+.lista li {
+      padding: 8px 12px;
+      cursor: pointer;
+}
+
+.lista li:hover {
+      background: #f1f1f1;
+}
+
+/* Clase visible */
+.mostrar {
+      display: block;
+}
+.buscador input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.buscador button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
+}
+
+
+/* estilos del MAIN */
+
+main{
+    width: 70%; /*ocupa el 70% del ancho total*/
+    margin: 0 auto;/*centrado horizontal*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;/* espacio entre secciones dentro del main */
+
+}
+/* Sección superior vacía */
+.main-sup {
+  height: 100px; /* altura deseada */
+}
+/* Separador entre secciones */
+.separador {
+  height: 20px; /* espacio entre secciones */
+}
+.main-inf {
+  background: #104444;
+  color: white;
+  height: 1000px; /* altura deseada */
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: none;
+  gap: 20px;/* espacio entre filtro y contenido */
+}
+
+/* Filtro */
+.filtro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filtro select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Contenido del menú */
+.menu-contenido {
+  margin: 0 auto;/*centrado horizontal*/
+  display: grid;
+  justify-content: center;
+   grid-template-columns: repeat(4, 1fr); /* 3 columnas fijas */
+  grid-template-rows: repeat(8, 300px); /* 5 filas de 120px */
+  gap: 12px;
+  width: 95%;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+
+}
+
+.item:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
