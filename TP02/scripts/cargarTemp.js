@@ -8,5 +8,5 @@ function cargarTemplate(selector, url) {
 }
 
 // cargar header y footer
-cargarTemplate("header", "../structure/header.html");
-cargarTemplate("footer", "../structure/footer.html");
+cargarTemplate("header", "../layout/header.html");
+cargarTemplate("footer", "../layout/footer.html");

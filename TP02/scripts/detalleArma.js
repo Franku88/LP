@@ -1,7 +1,7 @@
 // Obtener el id desde la URL
 const id = new URLSearchParams(window.location.search).get("id");
 
-fetch("../../data/skins.json")
+fetch("/TP02/data/skins.json")
   .then(res => res.json())
   .then(data => {
     const skin = data.find(skin => skin.id === id);

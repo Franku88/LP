@@ -22,7 +22,7 @@ fetch("data/skins.json")
 
       // Ahora cada item tiene link a detalle.html pasando el id
       div.innerHTML = `
-            <a href="html/pages/skin.html?id=${skin.id}">
+            <a href="/TP02/pages/skin.html?id=${skin.id}">
               <div class="skin_text">
                 <img src="${skin.image}" alt="${skin.name}">
                 <h3>${skin.name}</h3>

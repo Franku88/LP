@@ -18,20 +18,31 @@ header {
   padding: 2px 5px;
   align-items: center;
   justify-content: space-between;
-  border: solid 2px rgb(255, 255, 255);
+  border-radius: 8px;
 }
 
 footer {
   background: #000000;
   color: white;
+  display: flex;
+  flex-direction: row;
   padding: 10px 15px;
-  align-items: center;
-  justify-content: space-between;
-  border: solid 2px rgb(255, 255, 255);
+  gap: 2em;
+  border-radius: 8px;
 }
+
 footer img {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
+}
+
+footer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+  text-decoration: none;
+  color: inherit
 }
 
 /* NAV (menú de enlaces) */
@@ -48,7 +59,8 @@ footer img {
 
 .logo img {
   display: block;
-  height: 60px;
+  height: 55px;
+  border-radius: 8px;
 }
 
 /* Contenedor de los botones */
@@ -64,7 +76,7 @@ footer img {
   background: #070a0d;
   color: white;
   border: solid 2px rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: large;
   text-decoration: none;
   color: inherit;
@@ -74,20 +86,6 @@ footer img {
   background: #838384;
 }
 
-/* estilo de las listas desplegables de los botones*/
-.lista {
-  display: none;
-  /* oculta por defecto */
-  position: absolute;
-  background: white;
-  color: black;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  margin-top: 5px;
-  padding: 0;
-  list-style: none;
-  z-index: 10;
-}
 /*
 .buscador input {
   padding: 5px 10px;
@@ -104,6 +102,7 @@ footer img {
   cursor: pointer;
 }
 */
+
 /* estilos del MAIN */
 main {
   width: 70%;
@@ -117,25 +116,13 @@ main {
 
 }
 
-/* Sección superior vacía */
-.main-sup {
-  height: 100px;
-  /* altura deseada */
-}
-
-/* Separador entre secciones */
-.separador {
-  height: 20px;
-  /* espacio entre secciones */
-}
-
-.main-inf {
+.main_div {
   background: #000000;
   color: white;
   /* altura deseada */
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 8px;
   border: none;
   gap: 20px;
   padding: 1em;
@@ -166,6 +153,8 @@ main {
   grid-template-rows: repeat(auto, 500px);
   /* 5 filas de 120px */
   gap: 2em;
+  width: 95%;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 .skin_list_item {
