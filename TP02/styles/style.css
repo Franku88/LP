@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background-image: url(../assets/background/dust2_back_plat_s2.png);
+  padding: 10px;
+  background-image: url(../assets/background/dust2_ct_ramp_s2.png);
   background-size: cover;
   /* la imagen cubre toda la pantalla */
   background-repeat: no-repeat;
@@ -15,20 +15,23 @@ body {
 header {
   background: #000000;
   color: white;
-  padding: 20px 35px;
+  padding: 2px 5px;
   align-items: center;
   justify-content: space-between;
   border: solid 2px rgb(255, 255, 255);
-
 }
 
 footer {
   background: #000000;
   color: white;
-  padding: 20px 35px;
+  padding: 10px 15px;
   align-items: center;
   justify-content: space-between;
   border: solid 2px rgb(255, 255, 255);
+}
+footer img {
+  height: 100px;
+  width: 100px;
 }
 
 /* NAV (menú de enlaces) */
@@ -37,46 +40,38 @@ footer {
   align-items: center;
   /*centra el nav verticalmente*/
   justify-content: space-between;
-  /* separa logo y menú al máximo */
-  padding: 10px 20px;
-  margin: 5;
-  padding: 5;
 }
 
-/*logo principal*/
+.logo {
+  text-decoration: none;
+}
+
 .logo img {
-  height: 50px;
-  /* tamaño del logo */
+  display: block;
+  height: 60px;
 }
 
 /* Contenedor de los botones */
-.menu-botones {
+.menu_links {
   display: flex;
-  /* pone los botones uno al lado del otro */
-  gap: 10px;
-  /* espacio entre botones */
-}
-
-.contenedor {
-  position: relative;
-  display: inline-block;
-  gap: 10px;
-  /* espacio entre botones*/
+  flex-direction: row;
+  gap: 2em; /*el espacio entre los links */
 }
 
 /* Botón del NAV*/
-.btn {
-  padding: 8px 12px;
+.menu_links a {
+  padding: 20px;
   background: #070a0d;
   color: white;
   border: solid 2px rgb(255, 255, 255);
   border-radius: 10px;
-  cursor: pointer;
-  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+  color: inherit;
 }
 
-.btn:hover {
-  background: #0056b3;
+.menu_links a:hover {
+  background: #838384;
 }
 
 /* estilo de las listas desplegables de los botones*/
@@ -93,22 +88,7 @@ footer {
   list-style: none;
   z-index: 10;
 }
-
-/* cada item de la lista*/
-.lista li {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.lista li:hover {
-  background: #f1f1f1;
-}
-
-/* Clase visible */
-.mostrar {
-  display: block;
-}
-
+/*
 .buscador input {
   padding: 5px 10px;
   border-radius: 5px;
@@ -123,7 +103,7 @@ footer {
   color: #007bff;
   cursor: pointer;
 }
-
+*/
 /* estilos del MAIN */
 main {
   width: 70%;
@@ -189,18 +169,19 @@ main {
 }
 
 .skin_list_item {
-  max-width: 13em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #000000;
   align-items: center;
-  background: #fff;
+  max-width: 13em;
+  color: #000000;
+  background-color: #e0e0e0a8;
   border: 2px solid #333;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.2s, background 0.2s;
+  padding: 0 1em 0 1em
 }
 
 .skin_list_item:hover {
@@ -208,11 +189,29 @@ main {
   transform: scale(1.05);
 }
 
+.skin_list_item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.skin_details_img {
+  display: flex;
+  background-color: #e0e0e0a8;
+  border-radius: 6px;
+}
+
+
 .skin_list_item img {
   max-width: 90%;   /* tamaño fijo */
   height: auto;
   object-fit: scale-down; /* recorta sin deformar */
   border-radius: 6px;
+}
+
+.skin_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pagination {
@@ -237,3 +236,23 @@ main {
   background-color: #ccc;
   color: black;
 }
+
+.skin_details {
+  background: #000000;
+  color: white;
+  /* altura deseada */
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: none;
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+.skin_details_text {
+  margin: auto 0 auto 0;
+}
+
+
+

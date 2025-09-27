@@ -20,11 +20,17 @@ fetch("data/skins.json")
       const div = document.createElement("div");
       div.classList.add("skin_list_item");
 
+      // Ahora cada item tiene link a detalle.html pasando el id
       div.innerHTML = `
-            <img src="${skin.image}" alt="${skin.name}">
-            <p>${skin.name}</p>
-          `;
-
+            <a href="html/pages/skin.html?id=${skin.id}">
+              <div class="skin_text">
+                <img src="${skin.image}" alt="${skin.name}">
+                <h3>${skin.name}</h3>
+                <p><b>Arma:</b> ${skin.weapon}</p>
+                <p><b>Categoría:</b> ${skin.category}</p>
+                <p><b>Rareza:</b> <span style="color:${skin.rarity.color}">${skin.rarity.name}</span></p>
+              </div>
+            </a> `;
       contenedor.appendChild(div);
     });
 
@@ -42,39 +48,3 @@ fetch("data/skins.json")
 
   })
   .catch(err => console.error("Error cargando skins:", err));
-
- function toggleLista(idLista) {
-      // Oculta todas las listas
-      document.querySelectorAll(".lista").forEach(lista => {
-        if (lista.id !== idLista) {
-          lista.classList.remove("mostrar");
-        }
-      });
-      
-      // Muestra u oculta la seleccionada
-      document.getElementById(idLista).classList.toggle("mostrar");
-    }
-
-    // Si haces clic fuera, cierra todas las listas
-    window.onclick = function(event) {
-      if (!event.target.matches('.btn')) {
-        document.querySelectorAll(".lista").forEach(lista => {
-          lista.classList.remove("mostrar");});
-      }
-    }
-    
-    //
-    const selectCategoria = document.getElementById('categoria');
-    const items = document.querySelectorAll('#menuArmas .item');
-
-    selectCategoria.addEventListener('change', () => {
-    const categoria = selectCategoria.value;
-
-    items.forEach(item => {
-        if (categoria === 'todo' || item.dataset.categoria === categoria) {
-        item.style.display = 'flex'; // se muestra
-        } else {
-        item.style.display = 'none'; // se oculta
-        }
-    });
-    });
