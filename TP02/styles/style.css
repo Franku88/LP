@@ -97,6 +97,43 @@ footer a {
   background: #3D2B1F;
 }
 
+.user-menu {
+  position: relative;
+  display: inline-block;
+  /*height: 55px;
+  border-radius: 8px;*/
+
+}
+.user-icon {
+  width: 65px;
+  /*height: 55px;*/
+  cursor: pointer;
+  /*border-radius: 50%;
+  border: 2px solid #A38A5F;*/
+}
+.dropdown {
+  display: none;/*ocultar por defecto*/
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #2b2b2b;
+  border: 1px solid #5a3e1b;
+  border-radius: 8px;
+  min-width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown a:hover{
+  background:#f0f0f0 ;
+}
 /*
 .buscador input {
   padding: 5px 10px;
@@ -204,7 +241,6 @@ main {
   border-radius: 6px;
 }
 
-
 .skin_list_item img {
   max-width: 90%;   /* tamaño fijo */
   height: auto;
@@ -224,8 +260,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin: 1em;
-  
+  margin: 1em; 
 }
 
 .pagination a {
@@ -242,13 +277,15 @@ main {
 }
 
 .skin_details {
-  background: #000000;
-  color: white;
+  background: #A38A5F;
+  border-top: 2px solid #C0A17A;   /* marrón más claro */
+  border-left: 2px solid #C0A17A;  /* marrón más claro */
+  border-bottom: 2px solid #5C462F; /* marrón más oscuro */
+  border-right: 2px solid #5C462F;  /* marrón más oscuro */
   /* altura deseada */
   display: flex;
   flex-direction: row;
   border-radius: 5px;
-  border: none;
   gap: 20px;
   padding: 1em;
   /* espacio entre filtro y contenido */
@@ -257,6 +294,10 @@ main {
 .skin_details_text {
   margin: auto 0 auto 0;
 }
+
+
+
+
 
 
 
