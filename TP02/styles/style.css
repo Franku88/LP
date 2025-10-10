@@ -343,27 +343,99 @@ main {
   padding: 0 1em 0 1em
 }
 
-/**/
-
+/*estilos para el archivo caja.html*/
     .case {
-      margin: 40px auto;
-      padding: 20px;
+      margin: 10px auto;
+      padding: 10px;
       border: 2px solid #444;
-      width: 80%;
+      width: 95%;
+      height: 100%;
       border-radius: 12px;
-      background: #222;
+      background: #A38A5F;
+      border-top: 2px solid #C0A17A;   /* marrón más claro */
+      border-left: 2px solid #C0A17A;  /* marrón más claro */
+      border-bottom: 2px solid #5C462F; /* marrón más oscuro */
+      border-right: 2px solid #5C462F;  /* marrón más oscuro */
     }
+    .crate-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;/* para que no s erompa en pantallas pequeñas*/
+    }
+  
+    .crate-actions{
+       flex:1;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .crate-actions p{
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #ccc;
+    }
+    .crate-image-wrapper {
+      width: 50%;
+      position: relative;
+      display: inline-flex; /* mantiene tamaño natural de la imagen */
+    }
+
     .crate-image {
-  max-width: 200px;
-  display: block;
-  margin-bottom: 15px;
-}
+      width: 75%; /* o el tamaño que tenías antes */
+      height: auto;
+      border-radius: 10px;
+      object-fit: contain;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 8px; /* un poco arriba del borde */
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .crate-image-wrapper:hover .tooltip {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-5px);
+    }
+    .btn-comprar {
+      background: linear-gradient(135deg, #4caf50, #2e7d32);
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20%;
+      padding: 20px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      
+    }
+
+    .btn-comprar:hover {
+      background: linear-gradient(135deg, #66bb6a, #388e3c);
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
     .skins {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 1px;
+      margin-top: 10px;
     }
 
     .skin {
@@ -403,4 +475,32 @@ main {
   background: linear-gradient(145deg, #333, #553);
 }
 
+/*inventario estilos*/
+.inventario-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.item-caja {
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.item-caja:hover {
+  transform: scale(1.05);
+}
+
+.img-caja {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
