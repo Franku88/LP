@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     `${prefix}assets/background/overpass_van_vista_s2.jpg`,
     `${prefix}assets/background/nuke_t_s2.jpg`
   ];
-
   console.log("Imágenes cargadas:", imagenes);
  
   //rotacion de fondos
@@ -99,7 +98,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     .catch(err => console.error("Error cargando skins:", err));
     
-    //cargar skins desde el JSON 
+    //cargar cajas desde el JSON 
   const urlParamsCaja = new URLSearchParams(window.location.search);
   const pageCajas = parseInt(urlParams.get("page")) || 1; // página actual
   const perPageCajas = 20;
@@ -147,16 +146,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //carga las cajas compradas al inventario
     const container =document.getElementById("inventario-container");
     const inventario=JSON.parse(localStorage.getItem("inventarioCajas"))|| [];
+    container.innerHTML="";
+    inventario.forEach(caja =>{
+        const div= document.createElement("div");
+        div.classList.add("caja-item");
+
+        if(inventario.length === 0){//no hay cajas en el inventario
+              container.innerHTML="<p> inventario vacio</p>";
+              return;
+        }
+        container.innerHTML=inventario.map(caja =>`
+              <div class="item-caja">
+                <img src="${caja.image}" alt="${caja.name}" class="img-caja">
+                <span class="contador">${caja.cantidad}</span>
+                <h3>${caja.name}</h3>
+                <p>ID: ${caja.id}</p>
+                <p>Comprada el ${caja.fecha}</p>
+              </div>`),join("");
+        container.appendChild(div);
+    });
     
-    if(inventario.length === 0){//no hay cajas en el inventario
-       container.innerHTML="<p> inventario vacio</p>";
-       return;
-    }
-    container.innerHTML=inventario.map(caja =>`
-      <div class="item-caja">
-         <img src="${caja.image}" alt="${caja.name}" class="img-caja">
-         <h3>${caja.name}</h3>
-         <p>ID: ${caja.id}</p>
-         <p>Comprada el ${caja.fecha}</p>
-      </div>`),join("");
 });
