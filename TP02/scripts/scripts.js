@@ -1,5 +1,5 @@
 //
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   // Detectar si estamos en la carpeta pages
   const estaEnPages = window.location.pathname.includes("/pages/");
   const prefix = estaEnPages ? "../" : "./";
@@ -14,42 +14,43 @@ document.addEventListener("DOMContentLoaded", ()=>{
     `${prefix}assets/background/nuke_t_s2.jpg`
   ];
   console.log("Imágenes cargadas:", imagenes);
- 
+
   //rotacion de fondos
-  const fondo= document.querySelector(".fondo");
+  const fondo = document.querySelector(".fondo");
   let index = 0;
-  fondo.style.backgroundImage= `url(${imagenes[index]})`;
-  setInterval(()=> {
-      fondo.style.opacity=0;
-      setTimeout(()=> {
-        index= (index +1)% imagenes.length;
-        fondo.style.backgroundImage =`url(${imagenes[index]})`;
-        fondo.style.opacity=1;//
-      },2000);//coincide con la transicion
-  },7000);//cambia cada 7 seg
-  
+  fondo.style.backgroundImage = `url(${imagenes[index]})`;
+  setInterval(() => {
+    fondo.style.opacity = 0;
+    setTimeout(() => {
+      index = (index + 1) % imagenes.length;
+      fondo.style.backgroundImage = `url(${imagenes[index]})`;
+      fondo.style.opacity = 1;//
+    }, 1000);//coincide con la transicion
+  }, 10000);//cambia cada 7 seg
+
   //al hacer click en usuario aparecen las opciones(ingresar/registrarse)
   setTimeout(() => {//despues de 100 mls ejecutar
-    const userBtn=document.getElementById("userBtn");
-    const dropdown= document.getElementById("dropdownMenu");
+    const userBtn = document.getElementById("userBtn");
+    const dropdown = document.getElementById("dropdownMenu");
 
-    if (userBtn && dropdown) { 
-        userBtn.addEventListener("click", (e) => {
-          e.stopPropagation(); // evita que cierre inmediatamente
-          dropdown.style.display = 
-            dropdown.style.display === "block" ? "none" : "block";
-        });
+    if (userBtn && dropdown) {
+      userBtn.addEventListener("click", (e) => {
+        e.stopPropagation(); // evita que cierre inmediatamente
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      });
 
-        document.addEventListener("click", (e) => {
-          if (!e.target.closest(".user-menu")) {
-            dropdown.style.display = "none";
-          }
-        });
-      }else{
-        console.warn("elemento del menu usuario no encontrado");
-      }
-  },100);
-  
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest(".user-menu")) {
+          dropdown.style.display = "none";
+        }
+      });
+    } else {
+      console.warn("elemento del menu usuario no encontrado");
+    }
+  }, 100);
+
+
   //cargar skins desde el JSON 
   const urlParams = new URLSearchParams(window.location.search);
   const page = parseInt(urlParams.get("page")) || 1; // página actual
@@ -82,14 +83,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
               </a> `;
         contenedor.appendChild(div);
       });
-      
+
       // Crear links de paginación
       const totalPages = Math.ceil(data.length / perPage);
       for (let i = 1; i <= totalPages; i++) {
         const link = document.createElement("a");
         link.href = `?page=${i}`;
         link.textContent = i;
-        if (i === page) {        
+        if (i === page) {
           link.classList.add("page_selected");
         }
         paginacion.appendChild(link);
@@ -97,8 +98,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     })
     .catch(err => console.error("Error cargando skins:", err));
-    
-    //cargar cajas desde el JSON 
+
+  //cargar cajas desde el JSON
   const urlParamsCaja = new URLSearchParams(window.location.search);
   const pageCajas = parseInt(urlParams.get("page")) || 1; // página actual
   const perPageCajas = 20;
@@ -106,7 +107,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
   fetch("../data/crates.json")
     .then(res => res.json())
     .then(data => {
-
       const contenedor = document.getElementById("cajas_list");
       const paginacion = document.getElementById("pagination");
       // Calcular el rango según la página
@@ -121,49 +121,49 @@ document.addEventListener("DOMContentLoaded", ()=>{
         div.innerHTML = `
               <a href="/TP02/pages/caja.html?id=${caja.id}">
                 <div class="caja_text">
-                  <img src="${caja.image}" alt="${caja.name}">
+                  <img src="${caja.image}" alt="${caja.name}" class="img-caja">
                   <h3>${caja.name}</h3>
                 </div>
-              </a> `;
+              </a>`;
         contenedor.appendChild(div);
       });
-      
+
       // Crear links de paginación
       const totalPages = Math.ceil(data.length / perPage);
       for (let i = 1; i <= totalPages; i++) {
         const link = document.createElement("a");
         link.href = `?page=${i}`;
         link.textContent = i;
-        if (i === page) {        
+        if (i === page) {
           link.classList.add("page_selected");
         }
         paginacion.appendChild(link);
       }
+    }).catch(err => console.error("Error cargando cajas:", err));
 
-    })
-    .catch(err => console.error("Error cargando cajas:", err));
-    
-    //carga las cajas compradas al inventario
-    const container =document.getElementById("inventario-container");
-    const inventario=JSON.parse(localStorage.getItem("inventarioCajas"))|| [];
-    container.innerHTML="";
-    inventario.forEach(caja =>{
-        const div= document.createElement("div");
-        div.classList.add("caja-item");
+  //carga las cajas compradas al inventario
+  const container = document.getElementById("inventario-container");
 
-        if(inventario.length === 0){//no hay cajas en el inventario
-              container.innerHTML="<p> inventario vacio</p>";
-              return;
-        }
-        container.innerHTML=inventario.map(caja =>`
-              <div class="item-caja">
-                <img src="${caja.image}" alt="${caja.name}" class="img-caja">
-                <span class="contador">${caja.cantidad}</span>
-                <h3>${caja.name}</h3>
-                <p>ID: ${caja.id}</p>
-                <p>Comprada el ${caja.fecha}</p>
-              </div>`),join("");
-        container.appendChild(div);
-    });
-    
+  const inventario = JSON.parse(localStorage.getItem("inventarioCajas")) || [];
+  container.innerHTML = "";
+  inventario.forEach(caja => {
+    const div = document.createElement("div");
+    div.classList.add("caja-item");
+
+    if (inventario.length === 0) {//no hay cajas en el inventario
+      container.innerHTML = "<p> inventario vacio</p>";
+      return;
+    }
+
+    container.innerHTML = inventario.map(caja =>
+      `<div class="item-caja">
+        <img src="${caja.image}" alt="${caja.name}" class="img-caja">
+          <span class="contador">${caja.cantidad}</span>
+          <h3>${caja.name}</h3>
+          <p>ID: ${caja.id}</p>
+          <p>Comprada el ${caja.fecha}</p>
+      </div>`
+    ).join("");    
+  });
+
 });
