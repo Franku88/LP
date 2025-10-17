@@ -12,8 +12,8 @@ if (!window.__crateViewerLoaded) {
 
       // Cargar los JSON
       const [crates, allSkins] = await Promise.all([
-        fetch("../data/crates.json").then(res => res.json()),
-        fetch("../data/skins.json").then(res => res.json())
+        fetch("/TP02/data/crates.json").then(res => res.json()),
+        fetch("/TP02/data/skins.json").then(res => res.json())
       ]);
 
       // Asegurar que crates sea un array
@@ -47,8 +47,8 @@ if (!window.__crateViewerLoaded) {
         </div>
         <h2>Contiene:</h2>
         <div class="skins"></div>
-        ${crate.contains_rare && crate.contains_rare.length > 0 ? 
-          '<h2>Skins raras:</h2><div class="skins rare"></div>' 
+        ${crate.contains_rare && crate.contains_rare.length > 0 ?
+          '<h2>Skins raras:</h2><div class="skins rare"></div>'
           : ''
         }
       `;
@@ -61,25 +61,24 @@ if (!window.__crateViewerLoaded) {
         //conseguimos el invetario actual del localStorage
         const inventario = JSON.parse(localStorage.getItem("inventarioCajas")) || [];
         //buscamos si ya existe la caja en el inventario
-        const existe= inventario.find(c => c.id  === crate.id);
-        
-        if(existe){//si ya existe, incremento el contador de la caja
-           existe.cantidad= (existe.cantidad || 1)+1;
-        }else{//si no existe esa caja en el inventario creamos un nuevo registro
+        const existe = inventario.find(c => c.id === crate.id);
+
+        if (existe) {//si ya existe, incremento el contador de la caja
+          existe.cantidad = (existe.cantidad || 1) + 1;
+        } else {//si no existe esa caja en el inventario creamos un nuevo registro
           const nuevaCaja = {
-          id: crate.id,
-          name: crate.name,
-          image: crate.image,
-          cantidad: 1,
-          fecha: new Date().toLocaleString()
+            id: crate.id,
+            name: crate.name,
+            image: crate.image,
+            cantidad: 1,
+            fecha: new Date().toLocaleString()
           };
           inventario.push(nuevaCaja);
-          
+
         }
         //inventario actualizado
         localStorage.setItem("inventarioCajas", JSON.stringify(inventario));
         alert(`Has comprado la caja "${crate.name}"`);//msj por pantalla
-        window.location.href = "../pages/inventario.html";//direccion
       }
 
       const skinsDiv = caseDiv.querySelector(".skins");

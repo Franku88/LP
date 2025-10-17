@@ -1,4 +1,3 @@
-
 // Obtener el id desde la URL
 const id = new URLSearchParams(window.location.search).get("id");
 
