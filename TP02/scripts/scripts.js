@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  if (!localStorage.getItem("inventarioCajas")) {
+    // Si no existe, lo creamos
+    localStorage.setItem("inventarioCajas", JSON.stringify([]));
+  }
+
   //al hacer click en usuario aparecen las opciones(ingresar/registrarse)
   setTimeout(() => {//despues de 100 mls ejecutar
     const userBtn = document.getElementById("userBtn");
@@ -17,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     } else {
-      console.warn("elemento del menu usuario no encontrado");
+      console.warn("Elemento del menu usuario no encontrado");
     }
   }, 100);
 

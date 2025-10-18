@@ -1,0 +1,24 @@
+.main_div {  
+  /* altura deseada */
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+.main_div img {
+  display: flex;
+  
+  border-radius: 6px;
+  max-width: 400px;
+}
+
+.skin_details_text {
+  margin: auto 0 auto 0;
+}
+
+.container {
+  overflow:auto
+}

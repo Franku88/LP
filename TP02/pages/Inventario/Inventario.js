@@ -1,24 +1,24 @@
-//carga las cajas compradas al inventario
+//Muestra cajas compradas en el inventario
+const inventario = JSON.parse(localStorage.getItem("inventarioCajas"));
+
+//Obtiene div a rellenar
 const container = document.getElementById("inventario-container");
 
-const inventario = JSON.parse(localStorage.getItem("inventarioCajas")) || [];
-container.innerHTML = "";
-inventario.forEach(caja => {
-  const div = document.createElement("div");
-  div.classList.add("caja-item");
-
-  if (inventario.length === 0) {//no hay cajas en el inventario
-    container.innerHTML = "<p> inventario vacio</p>";
-    return;
-  }
-
-  container.innerHTML = inventario.map(caja =>
-    `<div class="item-caja">
-        <img src="${caja.image}" alt="${caja.name}" class="img-caja">
+if (inventario.length === 0) {//no hay cajas en el inventario
+  container.innerHTML = "<h3>Sin elementos en el inventario</h3>";
+} else {
+  inventario.forEach(caja => {
+    const div = document.createElement("div");
+    div.classList.add("case_card");
+    container.innerHTML = inventario.map(caja =>
+      `<div class="case_card container">
+        <img src="${caja.image}" alt="${caja.name}" class="case_card_img">
           <span class="contador">${caja.cantidad}</span>
           <h3>${caja.name}</h3>
-          <p>ID: ${caja.id}</p>
-          <p>Comprada el ${caja.fecha}</p>
+          <p><b>ID</b>: ${caja.id}</p>
       </div>`
-  ).join("");
-});
+    ).join("");
+  });
+}
+
+

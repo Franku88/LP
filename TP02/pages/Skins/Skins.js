@@ -2,7 +2,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const param = urlParams.get("page") || "1";
 const page = parseInt(param); // página actual
-const perPage = 20;
+const perPage = 15;
 
 fetch("/TP02/data/skins.json")
   .then(res => res.json())
@@ -16,18 +16,20 @@ fetch("/TP02/data/skins.json")
     // Renderizar los skins de la página
     items.forEach((skin) => {
       const div = document.createElement("div");
-      div.classList.add("skin_list_item");
+      div.classList.add("skin_card");
+      div.classList.add("container");
       // Ahora cada item tiene link a detalle.html pasando el id
       div.innerHTML = `
         <a href="/TP02/pages/Skin/Skin.html?id=${skin.id}">
-          <div class="skin_text">
+          <div class="card_content">
             <img src="${skin.image}" alt="${skin.name}">
             <h3>${skin.name}</h3>
             <p><b>Arma:</b> ${skin.weapon}</p>
             <p><b>Categoría:</b> ${skin.category}</p>
-            <p><b>Rareza:</b> <span style="color:${skin.rarity.color}">${skin.rarity.name}</span></p>
+            <p><b>Rareza:</b> <span>${skin.rarity.name}</span></p>
           </div>
         </a> `;
+      div.style.background = `linear-gradient(15deg, #A38A5F, ${skin.rarity.color})`;
       contenedor?.appendChild(div);
     });
 

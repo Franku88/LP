@@ -1,0 +1,68 @@
+.main_div {
+  /* altura deseada */
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+.cards_container {
+  /*centrado horizontal*/
+  margin: 0 auto;  
+  display: grid;
+  justify-content: center;
+  /* columnas */
+  grid-template-columns: repeat(5, 1fr);
+  /* filas */
+  grid-template-rows: repeat(auto, 500px);
+  gap: 2em;
+  width: 95%;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.case_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 13em;
+  background-color: #d1c4a1;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.case_card:hover {
+  transform: scale(1.05);
+}
+
+.case_card:hover img {
+  transform: scale(1.1);
+}
+
+.case_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.case_card img {
+  transition: transform 0.2s, background 0.2s;
+  max-width: 90%;
+  /* tamaño fijo */
+  height: auto;
+  object-fit: scale-down;
+  /* recorta sin deformar */
+  border-radius: 6px; 
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.card_content p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

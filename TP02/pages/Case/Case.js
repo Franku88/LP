@@ -33,22 +33,21 @@ if (!window.__crateViewerLoaded) {
 
       // Crear estructura del detalle de la caja
       const caseDiv = document.createElement("div");
-      caseDiv.classList.add("case");
       caseDiv.innerHTML = `
         <h1>${crate.name}</h1>
         <div class="crate-info">
-          <div class="crate-image-wrapper" data-id="${crate.id}">
-            <img src="${crate.image || ''}" alt="${crate.name}" class="crate-image">
+          <div class="crate-image-wrapper container_selected" data-id="${crate.id}">
+            <img src="${crate.image || ''}" alt="${crate.name}">
             <span class="tooltip">ID: ${crate.id}</span>
           </div>
           <div class="crate-actions">
-            <button class="btn-comprar" data-crateid="${crate.id}">comprar caja</button>
+            <button class="btn-comprar" data-crateid="${crate.id}">Comprar</button>
           </div>
         </div>
         <h2>Contiene:</h2>
         <div class="skins"></div>
         ${crate.contains_rare && crate.contains_rare.length > 0 ?
-          '<h2>Skins raras:</h2><div class="skins rare"></div>'
+          '<h2>Skins raras:</h2><div class="rare_skins"></div>'
           : ''
         }
       `;
@@ -58,8 +57,9 @@ if (!window.__crateViewerLoaded) {
       btnComprar.addEventListener("click", () => comprarCaja(crate));
 
       function comprarCaja(crate) {
+        const invKey = "inventarioCajas";
         //conseguimos el invetario actual del localStorage
-        const inventario = JSON.parse(localStorage.getItem("inventarioCajas")) || [];
+        const inventario = JSON.parse(localStorage.getItem(invKey));        
         //buscamos si ya existe la caja en el inventario
         const existe = inventario.find(c => c.id === crate.id);
 
@@ -71,18 +71,17 @@ if (!window.__crateViewerLoaded) {
             name: crate.name,
             image: crate.image,
             cantidad: 1,
-            fecha: new Date().toLocaleString()
           };
           inventario.push(nuevaCaja);
 
         }
         //inventario actualizado
-        localStorage.setItem("inventarioCajas", JSON.stringify(inventario));
+        localStorage.setItem(invKey, JSON.stringify(inventario));
         alert(`Has comprado la caja "${crate.name}"`);//msj por pantalla
       }
 
       const skinsDiv = caseDiv.querySelector(".skins");
-      const rareDiv = caseDiv.querySelector(".skins.rare");
+      const rareDiv = caseDiv.querySelector(".rare_skins");
 
       // Skins normales
       crate.contains.forEach(item => {
@@ -90,10 +89,12 @@ if (!window.__crateViewerLoaded) {
         if (skinData) {
           const skinDiv = document.createElement("div");
           skinDiv.classList.add("skin");
+          skinDiv.classList.add("container");
           skinDiv.innerHTML = `
             <img src="${skinData.image}" alt="${skinData.name}">
             <h3>${skinData.name}</h3>
           `;
+          skinDiv.style.background = `linear-gradient(145deg, #A38A5F, ${skinData.rarity.color})`;
           skinsDiv.appendChild(skinDiv);
         }
       });
@@ -105,10 +106,12 @@ if (!window.__crateViewerLoaded) {
           if (skinData) {
             const skinDiv = document.createElement("div");
             skinDiv.classList.add("skin");
+            skinDiv.classList.add("container");
             skinDiv.innerHTML = `
               <img src="${skinData.image}" alt="${skinData.name}">
               <h3>${skinData.name}</h3>
             `;
+            skinDiv.style.background = `linear-gradient(145deg, #A38A5F, ${skinData.rarity.color})`;
             rareDiv.appendChild(skinDiv);
           }
         });

@@ -1,0 +1,64 @@
+.main_div {
+  /* altura deseada */
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+/* Contenido del menú */
+.cards_container {
+  /*centrado horizontal*/
+  margin: 0 auto;  
+  display: grid;
+  justify-content: center;
+  /* columnas */
+  grid-template-columns: repeat(5, 1fr);
+  /* filas */
+  grid-template-rows: repeat(auto, 500px);
+  
+  gap: 2em;
+  width: 95%;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.skin_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 15em;
+  background-color: #d1c4a1;
+  transition: transform 0.2s, background 0.2s;
+  padding: 0 1em 0 1em
+}
+
+.skin_card:hover {
+  transform: scale(1.05);
+}
+
+.skin_card:hover img {
+  transform: scale(1.2);
+}
+
+.skin_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.skin_card img {
+  transition: transform 0.2s, background 0.2s;
+  max-width: 90%;
+  /* tamaño fijo */
+  height: auto;
+  object-fit: scale-down;
+  /* recorta sin deformar */
+  border-radius: 6px; 
+}
+
+.card_content p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -16,11 +16,12 @@ fetch("/TP02/data/crates.json")
     // Renderizar los cajas de la página
     items.forEach(caja => {
       const div = document.createElement("div");
-      div.classList.add("cajas_list_item");
+      div.classList.add("case_card");
+      div.classList.add("container");
       // Ahora cada item tiene link a tienda.html pasando el id
       div.innerHTML = `
-        <a href="/TP02/pages/Caja/Caja.html?id=${caja.id}">
-          <div class="caja_text">
+        <a href="/TP02/pages/Case/Case.html?id=${caja.id}">
+          <div class="card_content">
             <img src="${caja.image}" alt="${caja.name}" class="img-caja">
             <h3>${caja.name}</h3>
           </div>
