@@ -5,7 +5,7 @@ fetch("/TP02/data/skins.json")
   .then(res => res.json())
   .then(data => {
     const skin = data.find(skin => skin.id === id);
-    const detalle = document.getElementById('skin_details');
+    const detalle = document.getElementById('skin-details');
     
     if (!skin) {
       detalle.innerHTML = "<p>Skin no encontrado.</p>";
@@ -17,14 +17,18 @@ fetch("/TP02/data/skins.json")
       <h2><span>${skin.name}</span></h2>`;
     
     const imagen = document.createElement("div");
-    imagen.innerHTML = `
-      <img src="${skin.image}" alt="${skin.name}">`
+    imagen.innerHTML = 
+    `
+      <img src="${skin.image}" alt="${skin.name}">
+    `
     imagen.style.background = `linear-gradient(15deg, #A38A5F, ${skin.rarity.color})`;
     imagen.classList.add("container_selected");
+    imagen.classList.add("skin_details_img");
 
     const head = document.createElement("div");
     head.appendChild(name);
     head.appendChild(imagen);
+    head.classList.add("skin_details_head");
     
     const body = document.createElement("div");
     body.innerHTML = `

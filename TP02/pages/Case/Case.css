@@ -94,7 +94,7 @@
   padding: 10px;
   border-radius: 8px;
   width: 180px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease; 
 }
 
 .skin:hover {
@@ -106,6 +106,10 @@
   border-radius: 8px;
 }
 
+.skin a {
+  text-decoration: none;
+}
+
 .skin h3 {
   margin: 8px 0 4px;
   font-size: 1rem;
@@ -114,6 +118,7 @@
 .skin p {
   font-size: 0.9rem;
   color: #aaa;
+  text-decoration: none;
 }
 
 .rare_skins {

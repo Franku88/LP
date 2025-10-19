@@ -91,8 +91,10 @@ if (!window.__crateViewerLoaded) {
           skinDiv.classList.add("skin");
           skinDiv.classList.add("container");
           skinDiv.innerHTML = `
+          <a href="/TP02/pages/Skin/Skin.html?id=${skinData.id}">
             <img src="${skinData.image}" alt="${skinData.name}">
             <h3>${skinData.name}</h3>
+          </a>
           `;
           skinDiv.style.background = `linear-gradient(145deg, #A38A5F, ${skinData.rarity.color})`;
           skinsDiv.appendChild(skinDiv);
@@ -108,8 +110,10 @@ if (!window.__crateViewerLoaded) {
             skinDiv.classList.add("skin");
             skinDiv.classList.add("container");
             skinDiv.innerHTML = `
+            <a href="/TP02/pages/Skin/Skin.html?id=${skinData.id}">
               <img src="${skinData.image}" alt="${skinData.name}">
               <h3>${skinData.name}</h3>
+            </a>
             `;
             skinDiv.style.background = `linear-gradient(145deg, #A38A5F, ${skinData.rarity.color})`;
             rareDiv.appendChild(skinDiv);

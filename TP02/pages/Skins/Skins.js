@@ -22,11 +22,15 @@ fetch("/TP02/data/skins.json")
       div.innerHTML = `
         <a href="/TP02/pages/Skin/Skin.html?id=${skin.id}">
           <div class="card_content">
-            <img src="${skin.image}" alt="${skin.name}">
-            <h3>${skin.name}</h3>
-            <p><b>Arma:</b> ${skin.weapon}</p>
-            <p><b>Categoría:</b> ${skin.category}</p>
-            <p><b>Rareza:</b> <span>${skin.rarity.name}</span></p>
+            <div class="card_img">
+              <img src="${skin.image}" alt="${skin.name}">
+            </div>
+            <div>
+              <h3>${skin.name}</h3>
+              <p><b>Arma:</b> ${skin.weapon}</p>
+              <p><b>Categoría:</b> ${skin.category}</p>
+              <p><b>Rareza:</b> <span>${skin.rarity.name}</span></p>
+            </div>
           </div>
         </a> `;
       div.style.background = `linear-gradient(15deg, #A38A5F, ${skin.rarity.color})`;
