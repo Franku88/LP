@@ -1,0 +1,23 @@
+.main_div {  
+  /* altura deseada */
+  display: flex;
+  flex-direction: col;
+  border-radius: 5px;
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+  width: 100%;
+}
+
+.skin_details_head {
+  width: 50%;
+}
+
+.skin_details_img img {
+  width: 100%;
+}
+
+.skin_details_text {
+  width: 50%;
+  margin: auto 0 auto 0;
+}

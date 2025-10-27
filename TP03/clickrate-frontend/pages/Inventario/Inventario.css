@@ -1,0 +1,73 @@
+.main_div {
+  /* altura deseada */
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+.cards_container {
+  /*centrado horizontal*/
+  margin: 0 auto;  
+  display: grid;
+  justify-content: center;
+  /* columnas */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  /* filas */
+  grid-template-rows: repeat(auto, 500px);
+  gap: 1em;
+  width: 100%;
+}
+
+.cards_container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.case_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: #d1c4a1;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.case_card:hover {
+  transform: scale(1.05);
+}
+
+.case_card:hover img {
+  transform: scale(1.1);
+}
+
+.case_card img {
+  transition: transform 0.2s, background 0.2s;
+  max-width: 100%;
+  /* tamaño fijo */
+  height: auto;
+  object-fit: scale-down;
+}
+
+/*contador dentro de la caja*/
+.contador {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(0, 167, 0);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  /* Hace que quede encima de todo */
+  pointer-events: none;
+  /* No bloquea el hover sobre otros elementos */
+}

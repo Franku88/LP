@@ -1,0 +1,1171 @@
+[
+  {
+    "id": "skin-ad56dc47a4c4",
+    "name": "AK-47 | The Outsiders",
+    "description": "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire. It has been custom painted with crude depictions of Ts in different situations.\\n\\n<i>The Ts on the bus win rounds and rounds, rounds and rounds, rounds and rounds</i>",
+    "weapon": "AK-47",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-f0c2d895b50d",
+    "name": "AUG | Luxe Trim",
+    "description": "Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire. It has been custom painted to replicate the look and feel of a puffer jacket and finished with bronze accents.\\n\\n<i>The premium package</i>",
+    "weapon": "AUG",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-48039a85c871",
+    "name": "Desert Eagle | Calligraffiti",
+    "description": "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range. The slide of this Desert Eagle has been decorated with silver paint pen calligraphy.\\n\\n<i>These things take time</i>",
+    "weapon": "Desert Eagle",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-8300a7de7ac6",
+    "name": "Dual Berettas | Hydro Strike",
+    "description": "Firing two large-mag Berettas at once will lower accuracy and increase load times. On the bright side, you'll get to fire two large-mag Berettas at once. It has been custom painted in blue and orange. The droplets imply the weapons may still be wet.\\n\\n<i>The best weapon is the one your enemies least expect</i>",
+    "weapon": "Dual Berettas",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-5bd16f2599cf",
+    "name": "Glock-18 | Gold Toof",
+    "description": "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts. It has been custom painted with a pink grip and an aggressive forward-facing gaze.\\n\\n<i>\\\"This one's for you!\\\"</i>",
+    "weapon": "Glock-18",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-6dbefc59c1b9",
+    "name": "★ Kukri Knife | Fade",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been painted by airbrushing transparent paints that fade together over a chrome base coat.\\n\\n<i>This isn't just a weapon, it's a conversation piece - Imogen, Arms Dealer In Training</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-0808024a639a",
+    "name": "★ Kukri Knife | Slaughter",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been painted in a zebra-stripe pattern with aluminum and chrome paints with various reflectivities, and has then been covered with a tomato red candy coat.\\n\\n<i>Valeria doesn't pay Javier to ask questions... she pays him to pry out answers<i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-bc9e87f3c013",
+    "name": "★ Kukri Knife | Blue Steel",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been cold blued.\\n\\n<i>This is the malbec of weapon design - Booth, Arms Dealer</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-d1ab66316ff3",
+    "name": "★ Kukri Knife | Stained",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been given a forced patina using lemon and mustard dripped onto the surface.\\n\\n<i>If you think it's messy now, wait until you see it under a blacklight</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-c6064f381a53",
+    "name": "★ Kukri Knife | Case Hardened",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been color case-hardened through the application of wood charcoal at high temperatures.\\n\\n<i>A little color never hurt anyone</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-cda0246a9c0b",
+    "name": "★ Kukri Knife | Forest DDPAT",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been painted using a Digital Disruptive Pattern (DDPAT) hydrographic.\\n\\n<i>By the time you're close enough to notice the pixels it's already too late</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-2b40712cfff1",
+    "name": "★ Kukri Knife | Boreal Forest",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been painted using a forest camouflage hydrographic.\\n\\n<i>The woods can be a dangerous place... never travel alone</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-2f3b8c9ded18",
+    "name": "★ Kukri Knife | Crimson Web",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been painted using a spider web-patterned hydrographic over a red base coat and finished with a semi-gloss topcoat.\\n\\n<i>Be careful where you walk, you never know where the web is spread</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-238298a88e4a",
+    "name": "★ Kukri Knife | Scorched",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been spray-painted in a sun-dappled pattern.\\n\\n<i>The Phoenix is not a symbol of destruction... it's a symbol of rebirth - Valeria Jenner, Revolutionary</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-76a854adcfa8",
+    "name": "★ Kukri Knife | Safari Mesh",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been spray-painted using mesh fencing and cardboard cutouts as stencils.\\n\\n<i>A predator is a predator, no matter the environment</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-eefa60947417",
+    "name": "★ Kukri Knife | Night Stripe",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been spray-painted with a tape mask pattern in a night ops color scheme.\\n\\n<i>Spray... Pray... Paint... Stab.</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-79babeba4169",
+    "name": "★ Kukri Knife | Urban Masked",
+    "description": "Used in traditional rituals, such as weddings or stabbings. It has been spray-painted using a tangle of masking tape as a stencil.\\n\\n<i>True power is demonstrated with subtle application</i>",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-c7c133807ad6",
+    "name": "M249 | Hypnosis",
+    "description": "A strong open-area LMG, the M249 is the perfect choice for players willing to trade a slow fire rate for increased accuracy and a high ammo capacity. It has been custom painted with an eye catching black and blue hypnotic design.\\n\\n<i>\\\"Focus on the sound of my voice\\\"</i>",
+    "weapon": "M249",
+    "category": "Heavy",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-6bdcfb1366c6",
+    "name": "M4A4 | Turbine",
+    "description": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted with a wine-colored base.\\n\\n<i>WARNING: Prolonged firing may cause overheating</i>",
+    "weapon": "M4A4",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-aa9558c8a01f",
+    "name": "M4A1-S | Vaporwave",
+    "description": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy. It has been custom painted with a Greco-Roman statue and other distorted imagery from a bygone era.\\n\\n<i>From a hypnagogic dream</i>",
+    "weapon": "M4A1-S",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-1328a63c72b5",
+    "name": "MAC-10 | Saibā Oni",
+    "description": "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs. It has been custom painted with a cybernetic demon on the side and between the wire stock.\\n\\n<i>Crackling energy and cold steel</i>",
+    "weapon": "MAC-10",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-63ed7bb762a0",
+    "name": "MP5-SD | Statics",
+    "description": "Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant features an integrated silencer, making an already formidable weapon whisper-quiet. It has been custom painted with a black and blue design.\\n\\n<i>Black and blue and bloody all over</i>",
+    "weapon": "MP5-SD",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-71be2ee4feeb",
+    "name": "P250 | Epicenter",
+    "description": "A low-recoil firearm with a high rate of fire, the P250 is a relatively inexpensive choice against armored opponents. This custom paint job gives the appearance of custom machined parts using an anodized finish.\\n\\n<i>Direct impact</i>",
+    "weapon": "P250",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-39f40ce9d13d",
+    "name": "P90 | Randy Rush",
+    "description": "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil. This custom paint job features camouflage, military insignia, and... Randy. For better or worse.\\n\\n<i>\\\"Or how I learned to stop worrying and love the P90\\\"</i>",
+    "weapon": "P90",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-3604c7754aa6",
+    "name": "R8 Revolver | Tango",
+    "description": "The R8 Revolver delivers a highly accurate and powerful round at the expense of a lengthy trigger-pull. Firing rapidly by fanning the hammer may be the best option when point-blank stopping power is required. It has been custom painted with a wooden grip and roses.\\n\\n<i>Will you accept?</i>",
+    "weapon": "R8 Revolver",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-03f6e200c8b6",
+    "name": "SCAR-20 | Trail Blazer",
+    "description": "The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag. It has been custom painted with a monochrome black design and silver inlays.\\n\\n<i>FOR USE BY AUTHORIZED CT AGENTS ONLY</i>",
+    "weapon": "SCAR-20",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-05b22d280618",
+    "name": "SSG 08 | Rapid Transit",
+    "description": "The SSG08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship. It has been custom painted with fictitious transit diagrams designed around the maps of Counter-Strike.\\n\\n<i>\\\"Where are we headed?\\\"</i>",
+    "weapon": "SSG 08",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-52c02605493f",
+    "name": "UMP-45 | Neo-Noir",
+    "description": "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic. It has been custom painted with a stylized blue-magenta woman over a grayscale background.\\n\\n<i>\\\"Blade in hand, she decided it was time to take a stand\\\"</i>",
+    "weapon": "UMP-45",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-5b2502fc6ca2",
+    "name": "USP-S | 27",
+    "description": "A fan favorite from Counter-Strike Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise. This custom paint job features a winged defuser beneath the rear sight and \\\"027\\\" near the ejection port.\\n\\n<i>Light field work</i>",
+    "weapon": "USP-S",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-vanilla-weapon_knife_kukri",
+    "name": "★ Kukri Knife",
+    "description": "Used in traditional rituals, such as weddings or stabbings.",
+    "weapon": "Kukri Knife",
+    "category": "Knives",
+    "pattern": null,
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7003"
+  },
+  {
+    "id": "skin-4c2e3face5fd",
+    "name": "AK-47 | Searing Rage",
+    "description": "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire. This custom, art brut paint job depicts the scattered thoughts of a once sane member of the Elite Crew.\\n\\n<i>RU$HKILLxDESTROY//NOxFEAR-ATTACKBURN!TERROR</i>",
+    "weapon": "AK-47",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-5a39103af835",
+    "name": "AWP | Printstream",
+    "description": "High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy. It has been custom painted with a stark black and white design and finished with pearlescent highlights.\\n\\n<i>WHITE_1; BLACK_1; PEARLESCENT_1; BOLTACTION_1;</i>",
+    "weapon": "AWP",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-4515a7cdcc74",
+    "name": "Desert Eagle | Serpent Strike",
+    "description": "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range. It has been custom painted with an orange and red snakeskin pattern.\\n\\n<i>Serpentine!</i>",
+    "weapon": "Desert Eagle",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-f098f9b83e8b",
+    "name": "FAMAS | Bad Trip",
+    "description": "A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs. It has been custom painted with brightly colored monsters.\\n\\n<i>When you've had too much</i>",
+    "weapon": "FAMAS",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-f2567cfebfb7",
+    "name": "Galil AR | Control",
+    "description": "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat. It has been custom painted using grey, yellow, and red and takes inspiration from racing liveries.\\n\\n<i>Now available with all-wheel drive</i>",
+    "weapon": "Galil AR",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-a7838b4ba71f",
+    "name": "Glock-18 | Shinobu",
+    "description": "The Glock 18 is a serviceable first-round pistol that works best against unarmored opponents and is capable of firing three-round bursts. It has been custom painted with a woman on the slide wearing SR Tech \\\"Premium\\\" contact lenses.\\n\\n<i>\\\"SR Tech—helping you stay focused one engagement at a time\\\"</i>",
+    "weapon": "Glock-18",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-8bda61ff439a",
+    "name": "P2000 | Sure Grip",
+    "description": "Accurate and controllable, the German-made P2000 is a serviceable first-round pistol that works best against unarmored opponents. It has been custom painted in gunmetal grey using fractal designs and finished with orange accents.\\n\\n<i>>>WEAPON FINISH TEXTURE EXPERIMENTS, ENTRY ONE<<</i>",
+    "weapon": "P2000",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-31104eb44a48",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Black Pearl",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-d8e011ff13da",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 1",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-b0db8f2d815b",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 2",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-0df1b6a61907",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 3",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-7318cf51d0cc",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 4",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-22f341558d67",
+    "name": "★ Survival Knife | Marble Fade",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated in three colors.\\n\\n<i>The blade is made of many colors, but soon it all looks red</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-48064d096b19",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Ruby",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-2d238e77693f",
+    "name": "★ Survival Knife | Doppler",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Sapphire",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-c6ba6147a635",
+    "name": "★ Survival Knife | Tiger Tooth",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has been anodized orange and hand-etched in a tiger stripe pattern.\\n\\n<i>Like the tiger it is rare... like the tiger it is deadly...</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-4501a81b5f21",
+    "name": "★ Survival Knife | Damascus Steel",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has some damascus steel parts.",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-0e190498bba1",
+    "name": "★ Survival Knife | Rust Coat",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. This memento from Siege is still perfectly operational although the exterior surfaces have rusted.\\n\\n<i>Scars build character</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-34931416e76d",
+    "name": "★ Survival Knife | Ultraviolet",
+    "description": "This multi-purpose tactical knife features a serrated edge for ripping through coarse material like bone or fiber, plus a sharp gutting hook. The composite material handle is bolted to the blade with hex nuts. It has individual parts spray-painted solid colors in a black and purple color scheme.\\n\\n<i>Elegant design paired with brutal intent</i>",
+    "weapon": "Survival Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-19875cb0c4d2",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Black Pearl",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-850f2644f9c2",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 1",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-e810da3af62e",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 2",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-ae1b4d1aff06",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 3",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-a88a2f945f22",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 4",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-de2969c726c5",
+    "name": "★ Paracord Knife | Marble Fade",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated in three colors.\\n\\n<i>The blade is made of many colors, but soon it all looks red</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-f86dbd0df1d8",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Ruby",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-dd829cdcbf08",
+    "name": "★ Paracord Knife | Doppler",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Sapphire",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-acdbb8faedd8",
+    "name": "★ Paracord Knife | Tiger Tooth",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has been anodized orange and hand-etched in a tiger stripe pattern.\\n\\n<i>Like the tiger it is rare... like the tiger it is deadly...</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-a122a0880e40",
+    "name": "★ Paracord Knife | Damascus Steel",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has some damascus steel parts.",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-ae299cc4bbbc",
+    "name": "★ Paracord Knife | Rust Coat",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. This memento from Siege is still perfectly operational although the exterior surfaces have rusted.\\n\\n<i>Scars build character</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-2589a76eb449",
+    "name": "★ Paracord Knife | Ultraviolet",
+    "description": "This fixed-blade survival knife is designed to withstand being used as both a weapon and a tool, such as for setting traps, hunting animals or cutting foliage. The handle is wrapped in a length of multi-purpose paracord. It has individual parts spray-painted solid colors in a black and purple color scheme.\\n\\n<i>Elegant design paired with brutal intent</i>",
+    "weapon": "Paracord Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-8f0cdb10c200",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Black Pearl",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-5ab706931950",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 1",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-7bb154925be5",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 2",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-1dfdea7c8163",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 3",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-387777f4f5b7",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 4",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-9aeb6997f804",
+    "name": "★ Nomad Knife | Marble Fade",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated in three colors.\\n\\n<i>The blade is made of many colors, but soon it all looks red</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-9a8c5bed7b73",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Ruby",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-bf3c16976069",
+    "name": "★ Nomad Knife | Doppler",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Sapphire",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-d7713e7f3837",
+    "name": "★ Nomad Knife | Tiger Tooth",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has been anodized orange and hand-etched in a tiger stripe pattern.\\n\\n<i>Like the tiger it is rare... like the tiger it is deadly...</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-b7627ae71f87",
+    "name": "★ Nomad Knife | Damascus Steel",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has some damascus steel parts.",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-c148f9270bc2",
+    "name": "★ Nomad Knife | Rust Coat",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. This memento from Siege is still perfectly operational although the exterior surfaces have rusted.\\n\\n<i>Scars build character</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-d35f28de0219",
+    "name": "★ Nomad Knife | Ultraviolet",
+    "description": "This ergonomic tactical hunting lock-blade knife features composite handle inserts and a broad, sturdy blade, useful for cutting and prying apart material. It has individual parts spray-painted solid colors in a black and purple color scheme.\\n\\n<i>Elegant design paired with brutal intent</i>",
+    "weapon": "Nomad Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-8d0c4a99f9a1",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Black Pearl",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-acaf87efbdfd",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 1",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-5a75fadc4005",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 2",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-bc6ad0a79129",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 3",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-7ee0f56bd4a6",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Phase 4",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-81ec9b1d09fd",
+    "name": "★ Skeleton Knife | Marble Fade",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated in three colors.\\n\\n<i>The blade is made of many colors, but soon it all looks red</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-1e257d16f0fb",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Ruby",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-0d626aa19c6e",
+    "name": "★ Skeleton Knife | Doppler",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated.\\n\\n<i>Getting lost in its color can prove fatal</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "phase": "Sapphire",
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-0c0f10fa7512",
+    "name": "★ Skeleton Knife | Tiger Tooth",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has been anodized orange and hand-etched in a tiger stripe pattern.\\n\\n<i>Like the tiger it is rare... like the tiger it is deadly...</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-509253231b92",
+    "name": "★ Skeleton Knife | Damascus Steel",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has some damascus steel parts.",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-16c7cf350eae",
+    "name": "★ Skeleton Knife | Rust Coat",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. This memento from Siege is still perfectly operational although the exterior surfaces have rusted.\\n\\n<i>Scars build character</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-a1cee5b6dd1b",
+    "name": "★ Skeleton Knife | Ultraviolet",
+    "description": "This skeletonized-tang knife has been taped at the handle for improved grip. The hole allows a finger to be threaded through for stability and safety. It has individual parts spray-painted solid colors in a black and purple color scheme.\\n\\n<i>Elegant design paired with brutal intent</i>",
+    "weapon": "Skeleton Knife",
+    "category": "Knives",
+    "rarity": {
+      "name": "Covert",
+      "color": "#eb4b4b"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-5626422553f8",
+    "name": "M4A4 | Choppa",
+    "description": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs. It has been custom painted using a green camo pattern.\\n\\n<i>Increase your digital footprint</i>",
+    "weapon": "M4A4",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-78ea15f33e22",
+    "name": "MAG-7 | Resupply",
+    "description": "The CT-exclusive Mag-7 delivers a devastating amount of damage at close range. Its rapid magazine-style reloads make it a great tactical choice. It has been custom painted to resemble an ammunition box.\\n\\n<i>Keep the receipt</i>",
+    "weapon": "MAG-7",
+    "category": "Heavy",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-038541568496",
+    "name": "MP9 | Nexus",
+    "description": "Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms. It has been custom painted in silver, black, and blue with contemporary designs inlaid in the silver paint.\\n\\n<i>A personal, yet understated touch</i>",
+    "weapon": "MP9",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-aef077455139",
+    "name": "Nova | Rising Sun",
+    "description": "The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team. It has been custom painted to resemble a stained glass Japanese motif.\\n\\n<i>Wait 'til you see it in the sun - Imogen, Arms Dealer In Training</i>",
+    "weapon": "Nova",
+    "category": "Heavy",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-ff75c4a68dbd",
+    "name": "P90 | Wave Breaker",
+    "description": "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil. It has been custom painted using an angular blue and green design.\\n\\n<i>You look how you feel</i>",
+    "weapon": "P90",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-a8cc985f8710",
+    "name": "SSG 08 | Memorial",
+    "description": "The SSG08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship. This custom paint job depicts bronze engravings and is inspired by the concrete efficiency of brutalist architecture.\\n\\n<i>May your sacrifice not be in vain</i>",
+    "weapon": "SSG 08",
+    "category": "Rifles",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-27a11235665e",
+    "name": "Zeus x27 | Tosai",
+    "description": "Perfect for close-range ambushes and enclosed area encounters, the single-shot x27 Zeus is capable of incapacitating an enemy in a single hit. It has been custom painted with a young koi fish, also called a tosai.\\n\\n<i>Wishing you good fortune</i>",
+    "weapon": "Zeus x27",
+    "category": "Equipment",
+    "rarity": {
+      "name": "Restricted",
+      "color": "#8847ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-5a6a2858b51d",
+    "name": "UMP-45 | K.O. Factory",
+    "description": "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic. This custom paint job is inspired by old animation cartoons.\\n\\n<i>Swing and a miss!</i>",
+    "weapon": "UMP-45",
+    "category": "SMGs",
+    "rarity": {
+      "name": "Classified",
+      "color": "#d32ce6"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-0fbe55711fa6",
+    "name": "USP-S | PC-GRN",
+    "description": "A fan favorite from Counter-Strike Source, the Silenced USP Pistol has a detachable silencer that gives shots less recoil while suppressing attention-getting noise. It has been custom painted with a minty green and silver-colored design.\\n\\n<i>The Glass of Fate is half-full</i>",
+    "weapon": "USP-S",
+    "category": "Pistols",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  },
+  {
+    "id": "skin-e0eec3353ea4",
+    "name": "XM1014 | Mockingbird",
+    "description": "The XM1014 is a powerful fully automatic shotgun that justifies its heftier price tag with the ability to paint a room with lead fast. A silver and gold design depicting birds in flight has been custom painted on the receiver.\\n\\n<i>Time spent with birds is never wasted</i>",
+    "weapon": "XM1014",
+    "category": "Heavy",
+    "rarity": {
+      "name": "Mil-Spec Grade",
+      "color": "#4b69ff"
+    },
+    "crateid": "crate-7007"
+  }
+]

@@ -1,0 +1,132 @@
+.main_div {
+  padding: 1em;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.crate-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* para que no s erompa en pantallas pequeñas*/
+}
+
+.crate-actions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.crate-actions p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.crate-image-wrapper {
+  position: relative;  
+}
+
+.crate-image {
+  width: 75%;
+  /* o el tamaño que tenías antes */
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 8px;
+  /* un poco arriba del borde */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.crate-image-wrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.btn-comprar {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.btn-comprar:hover {
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.skins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 10px;
+}
+
+.skin {
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  transition: transform 0.2s ease; 
+}
+
+.skin:hover {
+  transform: scale(1.05);
+}
+
+.skin img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skin a {
+  text-decoration: none;
+}
+
+.skin h3 {
+  margin: 8px 0 4px;
+  font-size: 1rem;
+}
+
+.skin p {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.rare_skins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 10px;
+  border-top: 2px solid gold;  
+  padding: 1em;
+}

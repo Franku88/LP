@@ -1,0 +1,70 @@
+.main_div {
+  /* altura deseada */
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+  padding: 1em;
+  /* espacio entre filtro y contenido */
+}
+
+/* Contenido del menú */
+.cards_container {
+  /*centrado horizontal*/
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  /* columnas */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  /* filas */
+  grid-template-rows: repeat(auto, 500px);
+  gap: 1em;
+  width: 100%;
+}
+
+.skin_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: #d1c4a1;
+  transition: transform 0.2s, background 0.2s;
+  padding: 0 1em 0 1em
+}
+
+.skin_card:hover {
+  transform: scale(1.05);
+}
+
+.skin_card:hover img {
+  transform: scale(1.2);
+}
+
+.skin_card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.card_img {
+  display: flex;
+  flex-direction: row;
+}
+
+.card_img img {
+  max-width: 100%;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+.card_content p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
