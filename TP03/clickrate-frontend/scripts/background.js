@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Array de imágenes genérico
   const imagenes = [
-    ROOT_PATH + `/assets/background/dust2_back_plat_s2.png`,
-    ROOT_PATH + `/assets/background/dust2_blue_s2.png`,
-    ROOT_PATH + `/assets/background/dust2_double_doors_s2.png`,
-    ROOT_PATH + `/assets/background/nuke_ramp_s2.jpg`,
-    ROOT_PATH + `/assets/background/overpass_van_vista_s2.jpg`,
-    ROOT_PATH + `/assets/background/nuke_t_s2.jpg`
+    `/assets/background/dust2_back_plat_s2.png`,
+    `/assets/background/dust2_blue_s2.png`,
+    `/assets/background/dust2_double_doors_s2.png`,
+    `/assets/background/nuke_ramp_s2.jpg`,
+    `/assets/background/overpass_van_vista_s2.jpg`,
+    `/assets/background/nuke_t_s2.jpg`
   ];
 
   //rotacion de fondos

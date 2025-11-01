@@ -12,7 +12,7 @@ if (inventario.length === 0) {//no hay cajas en el inventario
   inventario.forEach(caja => {
     const div = document.createElement("div");    
     container.innerHTML = inventario.map(caja =>
-      `<a href="#" class="case_card container">
+      `<a href="../carrucel/openCase.html" class="case_card container">
         <img src="${API_URL+"/images/crate/"+caja.id}" alt="${caja.name}" class="case_card_img">
         <span class="contador">${caja.cantidad}</span>
         <h3>${caja.name}</h3>
