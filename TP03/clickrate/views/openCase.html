@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/img/ClickRateIsotipo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/inventario.css">
+    <link rel="stylesheet" href="/css/openCase.css">
     <script src="/js/layout.js"></script>
     <script src="/js/background.js"></script>
     <title>Inventario</title>
@@ -17,16 +17,19 @@
 
     <main>
         <section class="main_div container">
-            <h1> Inventario </h1>
-            <div id="inventario-container" class="cards_container"></div>
-            <div id="pagination" class="pagination"></div>
+            <div class="carrusel-container">
+                <div class="indicador"></div>
+                <div class="carrusel" id="carrusel"></div>
+            </div>
+            <button id="openBtn">Abrir caja</button>
+            <p id="result"></p>
         </section>
     </main>
 
     <div id="footer"></div>
 
     <script src="/js/scripts.js" defer></script>
-    <script src="" defer></script>
+    <script src="/js/openCase.js" defer></script>
 </body>
 
 </html>

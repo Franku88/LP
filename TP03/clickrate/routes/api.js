@@ -58,4 +58,31 @@ api.get("/crate-img/:id", (req, res) => {
   res.sendFile(imagePath);
 });
 
+
+// simula abrir una caja
+api.get("/open-case", (req, res) => { 
+  
+  try {
+    const jsonPath = path.join(__dirname, "../data/skins.json");
+    const data = fs.readFileSync(jsonPath, "utf-8"); // 🔹 Usar jsonPath, no dataPath
+    const skins = JSON.parse(data);
+
+    console.log("/api/open-case - petición recibida");
+
+    // Elegir aleatoriamente la skin ganadora
+    const winningIndex = Math.floor(Math.random() * skins.length);
+    const winningSkin = skins[winningIndex];
+
+    // Enviar al frontend la lista de skins + la ganadora
+    res.json({
+      skins,
+      winningSkin,
+    });
+  } catch (err) {
+    console.error("Error en /api/open-case:", err);
+    res.status(500).json({ error: "Error interno del servidor" });
+  }
+});
+
+
 export default api
