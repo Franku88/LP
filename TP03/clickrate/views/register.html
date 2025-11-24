@@ -16,12 +16,34 @@
    <div id="header"></div>
 
    <main>
-      <section class="main_div container"></section>
+      <section class="main_div container">
+         <div class="gid-view__selection--headers">
+            <h1>Registrarse</h1>
+         </div>
+         <form id="registerForm" class="form">
+            <label>Nickname:</label>
+            <input type="text" name="nickname" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+
+            <label>Repetir contraseña:</label>
+            <input type="password" name="confirmPassword" required>
+            
+            <button type="submit">Registrarse</button>
+         </form>
+
+         <p id="msg"></p>
+      </section>
    </main>
 
    <div id="footer"></div>
 
    <script src="/js/scripts.js" defer></script>
+   <script src="/js/register.js" defer></script>
 </body>
 
 </html>

@@ -3,3 +3,54 @@
   height: 100%;
   border-radius: 12px;
 }
+
+.form {
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 650px;
+  width: 80%;
+  margin: auto;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form label {
+  font-size: 14px;
+}
+
+.form input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0 18px 0;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s border;
+}
+
+.form input:focus {
+  border-color: #4a90e2;
+}
+
+.form button {  
+  width: 90%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s transform, 0.2s opacity;
+}
+
+.form button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.form button:active {
+  transform: translateY(1px);
+}

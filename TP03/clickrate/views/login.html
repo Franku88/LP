@@ -19,22 +19,19 @@
   <main>
     <section class="main_div container">
       <div class="gid-view__selection--headers">
-        <h1>Ingresa tu e-mail o telefono para iniciar sesion</h1>
+        <h1>Iniciar sesión</h1>
       </div>
 
-      <div></div><!-- espacio -->
-      <div>
-        <div class="login-form__input">
-          <label></label>
-          <div>
-            <input type="email">
-          </div>
-        </div>
-        <div class="login-form_actions">
-          <button></button>
-          <a href=""></a>
-        </div>
-      </div>
+      <form id="loginForm" class="form">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Ingresar</button>
+      </form>
+
+      <p id="msg"></p>
     </section>
   </main>
 

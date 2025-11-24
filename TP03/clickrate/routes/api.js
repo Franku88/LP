@@ -2,6 +2,7 @@ import express from "express"
 import path from "path";
 import url from "url";
 import fs from "fs";
+import bcrypt from 'bcryptjs';
 
 const api = express.Router()
 const __filename = url.fileURLToPath(import.meta.url);
@@ -138,13 +139,11 @@ api.get("/crate-img/:id", (req, res) => {
   res.sendFile(imagePath);
 });
 
-
 // simula abrir una caja
 api.get("/open-case", (req, res) => { 
-  
   try {
     const jsonPath = path.join(__dirname, "../data/skins.json");
-    const data = fs.readFileSync(jsonPath, "utf-8"); // 🔹 Usar jsonPath, no dataPath
+    const data = fs.readFileSync(jsonPath, "utf-8");
     const skins = JSON.parse(data);
 
     console.log("/api/open-case - petición recibida");
@@ -164,5 +163,48 @@ api.get("/open-case", (req, res) => {
   }
 });
 
+api.post("/register", async (req, res) => {
+  const { email, nickname, password, confirmPassword} = req.body;
+  // Validaciones básicas
+  if (!email || !password || !confirmPassword || !nickname) {
+    return res.status(400).json({ error: "Datos faltantes" });
+  }
+
+  if (password !== confirmPassword) {
+    return res.status(400).json({ error: "Las contraseñas no coinciden" });
+  }
+
+  const jsonPath = path.join(__dirname, "../data/users.json");
+  const users = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+
+  // Verificar si ya existe el correo
+  const exists = users.find(u => u.email === email);
+  if (exists) {
+    return res.status(400).json({ error: "El correo ya está registrado" });
+  }
+
+  // Hashear contraseña
+  const hashed = await bcrypt.hash(password, 10);
+
+  const newUser = {
+    id: "user-" + Date.now(), // milisegundos desde 1970
+    email,
+    nickname,
+    password: hashed
+  };
+
+  //Agrega usuario generado al JSON
+  users.push(newUser);
+  fs.writeFileSync(jsonPath, JSON.stringify(users, null, 2));
+
+  res.json({
+    message: "Usuario registrado correctamente",
+    user: {
+      id: newUser.id,
+      email: newUser.email,
+      nickname: newUser.nickname
+    }
+  });
+});
 
 export default api
