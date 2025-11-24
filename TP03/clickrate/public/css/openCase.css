@@ -1,0 +1,56 @@
+.main_div{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra todo horizontalmente */
+  gap: 20px;
+  padding: 1em;
+}
+.carrusel-container {
+  position: relative;
+  width: 90%;
+  height: 200px; /* ajusta según tus imágenes */
+  overflow: hidden; /* evita que el main crezca */
+  border: 5px solid #000000; /* opcional, para visualizar el contenedor */
+  background-color:#464545 ;/*fondo gris*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+#carrusel {
+  display: flex;
+  gap: 15px;
+  transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#carrusel .item {
+  flex: 0 0 auto; /* importante para que no se estire */
+  width: 150px;   /* ancho fijo de cada item */
+  height: 180px;  /* alto fijo de cada item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#carrusel .item img {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.carrusel-container .indicador {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: yellow;
+  z-index: 10;
+}
+#openBtn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
