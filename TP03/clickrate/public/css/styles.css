@@ -165,6 +165,7 @@ footer a {
 /* estilos del MAIN */
 main {
   width: 70%;
+  min-height: 75dvh;
   /*ocupa el 70% del ancho total*/
   margin: 0 auto;
   /*centrado horizontal*/
