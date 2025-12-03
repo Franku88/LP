@@ -9,3 +9,15 @@ Dominio - Web de Skins para Counter Strike 2
   - Instalar dependencias: `cd clickrate` `npm install`
   - Ejecutar servidor: `cd clickrate` `node server.js`
 
+# Funciones
+  - Listado de Skins (Paginado)  
+  - Listado de Crates (Paginado)
+  - Detalles de Skins
+  - Detalles de Crates
+  - Compra de Crates
+  - Inventario de Skins/Crates (LocalStorage, sin asociar a usuarios)
+  - Registro de Usuarios
+
+# En progreso
+  - Apertura de Crates 
+  - Inicio de Sesión 
