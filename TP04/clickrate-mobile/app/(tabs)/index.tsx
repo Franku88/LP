@@ -1,21 +1,19 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  Animated,
-  Pressable,
-} from "react-native";
+import {View,Text, StyleSheet, Animated,Pressable} from "react-native";
+import {useSplash} from "../context/SplashContext";
+import BackgroundRotator from "@/components/BackgroundRotator";
+
 
 export default function Index() {
-  const [mostrarInicio, setMostrarInicio] = useState(true);
-
+  const { mostrarSplash, ocultarSplash } = useSplash();
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0.8)).current;
   const glowAnim = useRef(new Animated.Value(0)).current;
   
   useEffect(() => {
-    Animated.parallel([//entrada
+    if (!mostrarSplash) return;
+
+    Animated.parallel([
       Animated.timing(fadeAnim, {
         toValue: 1,
         duration: 1200,
@@ -27,7 +25,8 @@ export default function Index() {
         useNativeDriver: true,
       }),
     ]).start();
-    Animated.loop(// Glow infinito (neón)
+
+    Animated.loop(
       Animated.sequence([
         Animated.timing(glowAnim, {
           toValue: 1,
@@ -41,8 +40,9 @@ export default function Index() {
         }),
       ])
     ).start();
-  }, []);
- const glowShadow = glowAnim.interpolate({
+  }, [mostrarSplash]);
+
+  const glowShadow = glowAnim.interpolate({
     inputRange: [0, 1],
     outputRange: [10, 30],
   });
@@ -52,61 +52,49 @@ export default function Index() {
     outputRange: [0.4, 1],
   });
 
-    if (mostrarInicio) {
+  // 👉 SPLASH
+  if (mostrarSplash) {
     return (
-      <View style={styles.splash}>
-        {/* TEXTO SUPERIOR */}
-        <Animated.Text
-          style={[
-            styles.title,
-            {
-              opacity: fadeAnim,
-              textShadowRadius: glowShadow,
-            },
-          ]}
-        >
-          WELCOME
-        </Animated.Text>
+        <View style={styles.splash}>
+          <Animated.Text
+            style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
+          >
+            WELCOME
+          </Animated.Text>
 
-        {/* LOGO */}
-        <Pressable onPress={() => setMostrarInicio(false)}>
-          <Animated.Image
-            source={require("../../assets/img/ClickRateSotipo.png")}
-            style={[
-              styles.logo,
-              {
-                opacity: fadeAnim,
-                transform: [{ scale: scaleAnim }],
-                shadowRadius: glowShadow,
-                shadowOpacity: glowOpacity,
-              },
-            ]}
-            resizeMode="contain"
-          />
-        </Pressable>
+          <Pressable onPress={ocultarSplash}>
+            <Animated.Image
+              source={require("../../assets/img/ClickRateSotipo.png")}
+              style={[
+                styles.logo,
+                {
+                  opacity: fadeAnim,
+                  transform: [{ scale: scaleAnim }],
+                  shadowRadius: glowShadow,
+                  shadowOpacity: glowOpacity,
+                },
+              ]}
+              resizeMode="contain"
+            />
+          </Pressable>
 
-        {/* TEXTO INFERIOR */}
-        <Animated.Text
-          style={[
-            styles.title,
-            {
-              opacity: fadeAnim,
-              textShadowRadius: glowShadow,
-            },
-          ]}
-        >
-          CLICKRATE
-        </Animated.Text>
-      </View>
+          <Animated.Text
+            style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
+          >
+            CLICKRATE
+          </Animated.Text>
+        </View>
     );
   }
-
+  // CONTENIDO NORMAL (header/footer ya visibles)
   return (
-    <View style={styles.home}>
-      <Text style={styles.homeText}>HOME / INDEX</Text>
-    </View>
-  );
-}
+      <BackgroundRotator activar={true}>
+        <View style={styles.home}>
+          <Text style={styles.homeText}>HOME / INDEX</Text>
+        </View>
+      </BackgroundRotator>
+    );
+  }
 
 const styles = StyleSheet.create({
   splash: {
@@ -116,22 +104,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    color: "#38bdf8",
+    color: "#e0f2fe",
     fontSize: 34,
-    marginVertical: 12,
     fontWeight: "bold",
-
     textShadowColor: "#38bdf8",
-    textShadowOffset: { width: 0, height: 0 },
   },
   logo: {
     width: 160,
     height: 160,
     marginVertical: 24,
-
     shadowColor: "#38bdf8",
-    shadowOffset: { width: 0, height: 0 },
-    elevation: 20, // Android glow fake
+    elevation: 20,
   },
   home: {
     flex: 1,
