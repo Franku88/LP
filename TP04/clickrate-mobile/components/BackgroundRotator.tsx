@@ -1,14 +1,82 @@
-import React, { useEffect, useState } from "react";
-import { View, StyleSheet, ImageBackground, Animated } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
+import {
+  View,
+  Animated,
+  ImageBackground,
+  StyleSheet,
+} from "react-native";
 
-const images = [
-  require("../assets/img/background/dust2_back_plat_s2.png"),
-  require("../assets/img/background/dust2_blue_s2.png"),
-  require("../assets/img/background/dust2_double_doors_s2.png"),
-  require("../assets/img/background/nuke_ramp_s2.jpg"),
-  require("../assets/img/background/overpass_van_vista_s2.jpg"),
-  require("../assets/img/background/nuke_t_s2.jpg"),
-];
+const BASE_URL = "http://127.0.0.1:3000";
+
+interface Props {
+  activar?: boolean;
+}
+
+export default function BackgroundRotator({ activar = true }: Props) {
+  const [images, setImages] = useState<string[]>([]);
+  const [index, setIndex] = useState(0);
+  const fade = useRef(new Animated.Value(1)).current;
+
+  useEffect(() => {
+    fetch(`${BASE_URL}/api/backgrounds`)
+      .then(res => res.json())
+      .then(json => setImages(json.data))
+      .catch(err => console.error(err));
+  }, []);
+
+  useEffect(() => {
+    if (!activar || images.length === 0) return;
+
+    const interval = setInterval(() => {
+      Animated.timing(fade, {
+        toValue: 0,
+        duration: 1500,
+        useNativeDriver: true,
+      }).start(() => {
+        setIndex(prev => (prev + 1) % images.length);
+        Animated.timing(fade, {
+          toValue: 1,
+          duration: 1500,
+          useNativeDriver: true,
+        }).start();
+      });
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [activar, images]);
+
+  if (!images.length) return null;
+
+  return (
+    <Animated.View
+      pointerEvents="none"          // 👈 CLAVE
+      style={[styles.background, { opacity: fade }]}
+    >
+      <ImageBackground
+        source={{ uri: BASE_URL + images[index] }}
+        style={styles.image}
+        resizeMode="cover"
+      />
+    </Animated.View>
+  );
+}
+
+const styles = StyleSheet.create({
+  background: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: -1,                    // 👈 CLAVE
+  },
+  image: {
+    flex: 1,
+  },
+});
+
+/*import React, { useEffect, useState, useRef} from "react";
+import { View, StyleSheet, ImageBackground, Animated } from "react-native";
 
 interface Props {
   children: React.ReactNode;
@@ -17,32 +85,57 @@ interface Props {
 
 export default function BackgroundRotator({ children, activar=false }: Props) {
 
+  const [images, setImages] = useState<string[]>([]);
   const [index, setIndex] = useState(0);
-  const fade= new Animated.Value(1);
+  const fade = useRef(new Animated.Value(1)).current;
+
+  //Carga imágenes desde la API
+  //Carga imágenes desde la API
+  useEffect(() => {
+    fetch("http://localhost:3000")
+      .then((res) => res.json())
+      .then((json) => setImages(json.data))
+      .catch((err) =>
+        console.error("Error cargando fondos:", err)
+      );
+  }, []);
 
   useEffect(() => {
-    if (!activar) return;     // <--no rota en la animacion de inicio
+    if (!activar || images.length === 0) return;
 
     const interval = setInterval(() => {
-      Animated.timing(fade, { toValue: 0, duration: 1500, useNativeDriver: true }).start(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-      Animated.timing(fade, { toValue: 1, duration: 1500, useNativeDriver: true }).start();
+      Animated.timing(fade, {
+        toValue: 0,
+        duration: 1500,
+        useNativeDriver: true,
+      }).start(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+
+        Animated.timing(fade, {
+          toValue: 1,
+          duration: 1500,
+          useNativeDriver: true,
+        }).start();
       });
     }, 10000);
 
     return () => clearInterval(interval);
-  }, [activar]);
+  }, [activar, images]);
+
+  if (images.length === 0) {
+    return <View style={styles.container}>{children}</View>;
+  }
 
   return (
     <View style={styles.container}>
       <Animated.View style={{ flex: 1, opacity: fade }}>
-          <ImageBackground
-            source={images[index]}
-            style={styles.background}
-            resizeMode="cover"
-          >
-            {children}
-          </ImageBackground>
+        <ImageBackground
+          source={{ uri: images[index] }}
+          style={styles.background}
+          resizeMode="cover"
+        >
+          {children}
+        </ImageBackground>
       </Animated.View>
     </View>
   );
@@ -59,4 +152,4 @@ const styles = StyleSheet.create({
   bgImage: {
     opacity: 0.85, 
   },
-});
+});*/

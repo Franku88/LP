@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import {View,Text, StyleSheet, Animated,Pressable} from "react-native";
 import {useSplash} from "../context/SplashContext";
 import BackgroundRotator from "@/components/BackgroundRotator";
-
+import Main from "@/components/Main";
 
 export default function Index() {
   const { mostrarSplash, ocultarSplash } = useSplash();
@@ -55,44 +55,47 @@ export default function Index() {
   // 👉 SPLASH
   if (mostrarSplash) {
     return (
-        <View style={styles.splash}>
-          <Animated.Text
-            style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
-          >
-            WELCOME
-          </Animated.Text>
+          <View style={styles.splash}>
+            <Animated.Text
+              style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
+            >
+              WELCOME
+            </Animated.Text>
 
-          <Pressable onPress={ocultarSplash}>
-            <Animated.Image
-              source={require("../../assets/img/ClickRateSotipo.png")}
-              style={[
-                styles.logo,
-                {
-                  opacity: fadeAnim,
-                  transform: [{ scale: scaleAnim }],
-                  shadowRadius: glowShadow,
-                  shadowOpacity: glowOpacity,
-                },
-              ]}
-              resizeMode="contain"
-            />
-          </Pressable>
+            <Pressable onPress={ocultarSplash}>
+              <Animated.Image
+                source={require("../../assets/img/ClickRateSotipo.png")}
+                style={[
+                  styles.logo,
+                  {
+                    opacity: fadeAnim,
+                    transform: [{ scale: scaleAnim }],
+                    shadowRadius: glowShadow,
+                    shadowOpacity: glowOpacity,
+                  },
+                ]}
+                resizeMode="contain"
+              />
+            </Pressable>
 
-          <Animated.Text
-            style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
-          >
-            CLICKRATE
-          </Animated.Text>
-        </View>
+            <Animated.Text
+              style={[styles.title, { opacity: fadeAnim, textShadowRadius: glowShadow }]}
+            >
+              CLICKRATE
+            </Animated.Text>
+          </View> 
     );
   }
   // CONTENIDO NORMAL (header/footer ya visibles)
-  return (
-      <BackgroundRotator activar={true}>
-        <View style={styles.home}>
-          <Text style={styles.homeText}>HOME / INDEX</Text>
-        </View>
-      </BackgroundRotator>
+    return (
+      <view>
+        <BackgroundRotator activar={true}></BackgroundRotator>
+        <Main>
+            <View style={styles.home}>
+              <Text style={styles.homeText}>HOME / INDEX</Text>
+            </View>
+        </Main>
+      </view>    
     );
   }
 

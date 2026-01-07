@@ -1,6 +1,12 @@
+
+
+
+
 import { View, Text, Image, Pressable, StyleSheet } from "react-native";
+import {useRouter} from "expo-router";
 
 export default function Header() {
+  const router=useRouter(); 
   return (
     <View style={styles.container}>
       <View style={styles.navtop}>
@@ -14,13 +20,13 @@ export default function Header() {
 
         {/* LINKS */}
         <View style={styles.navLinks}>
-          <Pressable style={styles.navButton}>
+          <Pressable style={styles.navButton} onPress={()=> router.replace("/(tabs)/skins")}>
             <Text style={styles.navText}>Skins</Text>
           </Pressable>
-          <Pressable style={styles.navButton}>
+          <Pressable style={styles.navButton} onPress={()=> router.replace("/(tabs)/tienda")}>
             <Text style={styles.navText}>Tienda</Text>
           </Pressable>
-          <Pressable style={styles.navButton}>
+          <Pressable style={styles.navButton } onPress={()=> router.replace("/(tabs)/inventario")}>
             <Text style={styles.navText}>Inventario</Text>
           </Pressable>
         </View>
