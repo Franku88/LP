@@ -10,15 +10,15 @@ export default function TabsLayout() {
   const { mostrarSplash } = useSplash();
 
   return (
-   <View style={styles.container}>
+    <View style={styles.container}>
 
-      {/* 🔥 FONDO SOLO DESPUÉS DEL SPLASH */}
+      {/* FONDO ( DETRÁS DE TODO) */}
       {!mostrarSplash && <BackgroundRotator activar />}
 
       {/* HEADER */}
       {!mostrarSplash && <Header />}
 
-      {/* CONTENIDO */}
+      {/*CONTENIDO */}
       <View style={styles.content}>
         <Slot />
       </View>
@@ -32,10 +32,13 @@ export default function TabsLayout() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-
+    flex:1,
+    position:"relative"
   },
   content: {
-    flex: 1,
+      flex: 1,
+      width: "100%", // NECESARIO
+      alignItems: "center",
+      justifyContent: "flex-start",
   },
 });

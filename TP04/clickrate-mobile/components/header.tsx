@@ -11,7 +11,7 @@ export default function Header() {
     <View style={styles.container}>
       <View style={styles.navtop}>
         {/* LOGO */}
-        <Pressable style={styles.logo}>
+        <Pressable style={styles.logo} onPress={()=> router.replace("/")}>
           <Image
             source={require("../assets/img/ClickRateImagotipo.png")}
             style={styles.logoImg}

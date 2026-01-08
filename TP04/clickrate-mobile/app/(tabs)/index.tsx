@@ -3,6 +3,7 @@ import {View,Text, StyleSheet, Animated,Pressable} from "react-native";
 import {useSplash} from "../context/SplashContext";
 import BackgroundRotator from "@/components/BackgroundRotator";
 import Main from "@/components/Main";
+import Scrollable from "@/components/Scrollable";
 
 export default function Index() {
   const { mostrarSplash, ocultarSplash } = useSplash();
@@ -88,14 +89,16 @@ export default function Index() {
   }
   // CONTENIDO NORMAL (header/footer ya visibles)
     return (
-      <view>
-        <BackgroundRotator activar={true}></BackgroundRotator>
+      <View style={styles.container}>
+      {/* CONTENIDO */}
+      <View >
         <Main>
-            <View style={styles.home}>
-              <Text style={styles.homeText}>HOME / INDEX</Text>
-            </View>
+          <View style={styles.home}>
+            <Text style={styles.homeText}>HOME / INDEX</Text>
+          </View>
         </Main>
-      </view>    
+      </View>
+    </View>
     );
   }
 
@@ -105,6 +108,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#020617",
     justifyContent: "center",
     alignItems: "center",
+  },  
+  container: {
+    padding: 16,
+     alignItems: "center",
+    
   },
   title: {
     color: "#e0f2fe",

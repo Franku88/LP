@@ -63,48 +63,53 @@ export default function Skins() {
   );
 
   return (
-    <View style={styles.container}>
-      <BackgroundRotator activar={true}></BackgroundRotator>
-      <Main>
-            <View style={styles.container}>
-              <Text style={styles.title}>Skins</Text>
+   <View style={{ flex: 1 }}>
+    <Main >
+      <Text style={styles.title}></Text>
 
-              {loading ? (
-                <ActivityIndicator size="large" />
-              ) : (
-                <FlatList
-                  data={skins}
-                  renderItem={renderSkin}
-                  keyExtractor={item => item.id.toString()}
-                  numColumns={4}//4 items por columna
-                  columnWrapperStyle={{ justifyContent:"space-between",marginBottom:12, gap: 12 }}
-                  contentContainerStyle={{ paddingBottom: 100,gap: 12 }}
-                />
-              )}
+      {loading ? (
+        <ActivityIndicator size="large" />
+      ) : (
+        <FlatList
+          data={skins}
+          renderItem={renderSkin}
+          keyExtractor={(item) => item.id.toString()}
+          numColumns={4}
+          style={{ flex: 1 }}
+          showsVerticalScrollIndicator
+          columnWrapperStyle={{
+            justifyContent: "space-between",
+            marginBottom: 12,
+          }}
+          contentContainerStyle={{
+            paddingBottom: 40,
+          }}
+        />
+      )}
+    </Main>
 
-              <View style={styles.pagination}>
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
-                  <Pressable
-                    key={p}
-                    onPress={() => setPage(p)}
-                    style={[
-                      styles.pageButton,
-                      p === page && styles.pageSelected,
-                    ]}
-                  >
-                    <Text style={styles.pageText}>{p}</Text>
-                  </Pressable>
-                ))}
-              </View>
-            </View>
-      </Main>
+    {/* PAGINACIÓN FUERA DEL MAIN */}
+    <View style={styles.pagination}>
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+        <Pressable
+          key={p}
+          onPress={() => setPage(p)}
+          style={[
+            styles.pageButton,
+            p === page && styles.pageSelected,
+          ]}
+        >
+          <Text style={styles.pageText}>{p}</Text>
+        </Pressable>
+      ))}
     </View>
+  </View>
   );
 }
 const styles = StyleSheet.create({
   container: {
     padding: 16,
-    
+    alignItems: "center", 
   },
 
   title: {

@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
-  View,
   Animated,
   ImageBackground,
   StyleSheet,
@@ -21,7 +20,7 @@ export default function BackgroundRotator({ activar = true }: Props) {
     fetch(`${BASE_URL}/api/backgrounds`)
       .then(res => res.json())
       .then(json => setImages(json.data))
-      .catch(err => console.error(err));
+      .catch(err => console.error("Fondos:", err));
   }, []);
 
   useEffect(() => {
@@ -49,8 +48,11 @@ export default function BackgroundRotator({ activar = true }: Props) {
 
   return (
     <Animated.View
-      pointerEvents="none"          // 👈 CLAVE
-      style={[styles.background, { opacity: fade }]}
+      pointerEvents="none" // 🔒 no captura eventos
+      style={[
+        StyleSheet.absoluteFillObject,
+        { opacity: fade },
+      ]}
     >
       <ImageBackground
         source={{ uri: BASE_URL + images[index] }}
@@ -62,14 +64,6 @@ export default function BackgroundRotator({ activar = true }: Props) {
 }
 
 const styles = StyleSheet.create({
-  background: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    zIndex: -1,                    // 👈 CLAVE
-  },
   image: {
     flex: 1,
   },
