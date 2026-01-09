@@ -15,12 +15,13 @@ app.use("/img", express.static(path.join(process.cwd(), "img")));
 
 // Skins (IMÁGENES)
 app.use("/skin-img", express.static(path.join(process.cwd(), "img/skin")));
-
+// cajas (IMAGENES)
+app.use("/crates-img", express.static(path.join(process.cwd(), "img/crate")))
 // API (JSON)
 app.use("/api", apiRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Backend corriendo en http://127.0.0.1:${PORT}`);
+  console.log(`Backend corriendo en http://localhost:${PORT}`);
 });
 
 /*import express from "express"

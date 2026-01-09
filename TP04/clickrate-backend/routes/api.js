@@ -3,10 +3,27 @@ import fs from "fs";
 import path from "path";
 
 const router = Router();
-const dataPath = path.join(process.cwd(), "data", "skins.json");
 
+// =====================
+// PATHS
+// =====================
+const skinsPath = path.join(process.cwd(), "data", "skins.json");
+const cratesPath = path.join(process.cwd(), "data", "crates.json");
 
-// API que devuelve rutas de imágenes
+// =====================
+// LOADERS
+// =====================
+function loadSkins() {
+  return JSON.parse(fs.readFileSync(skinsPath, "utf-8"));
+}
+
+function loadCrates() {
+  return JSON.parse(fs.readFileSync(cratesPath, "utf-8"));
+}
+
+// =====================
+// BACKGROUNDS
+// =====================
 router.get("/backgrounds", (req, res) => {
   res.json({
     data: [
@@ -20,12 +37,8 @@ router.get("/backgrounds", (req, res) => {
   });
 });
 
-function loadSkins() {//
-  const raw = fs.readFileSync(dataPath, "utf-8");
-  return JSON.parse(raw);
-}
 
-// enpoint devuelve la estructura (los datos de la skin)
+// SKINS API
 router.get("/skins", (req, res) => {
   const page = parseInt(req.query.page) || 1;
   const limit = parseInt(req.query.limit) || 15;
@@ -35,18 +48,13 @@ router.get("/skins", (req, res) => {
   const start = (page - 1) * limit;
   const end = start + limit;
 
-  const paginated = skins.slice(start, end);
-  const totalPages = Math.ceil(skins.length / limit);
-
   res.json({
     page,
-    totalPages,
-    data: paginated,
+    totalPages: Math.ceil(skins.length / limit),
+    data: skins.slice(start, end),
   });
 });
 
-
-/* GET imagen de skin */
 router.get("/skin-img/:id", (req, res) => {
   const filePath = path.join(
     process.cwd(),
@@ -55,10 +63,39 @@ router.get("/skin-img/:id", (req, res) => {
     `${req.params.id}.png`
   );
 
-  res.sendFile(filePath, (err) => {
-    if (err) {
-      res.status(404).json({ error: "Imagen no encontrada" });
-    }
+  res.sendFile(filePath, err => {
+    if (err) res.status(404).json({ error: "Imagen no encontrada" });
+  });
+});
+
+
+// CRATES API
+router.get("/crates", (req, res) => {
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 15;
+
+  const crates = loadCrates(); //
+
+  const start = (page - 1) * limit;
+  const end = start + limit;
+
+  res.json({
+    page,
+    totalPages: Math.ceil(crates.length / limit),
+    data: crates.slice(start, end),
+  });
+});
+
+router.get("/crates-img/:id", (req, res) => {
+  const filePath = path.join(
+    process.cwd(),
+    "img",
+    "crate",
+    `${req.params.id}.png`
+  );
+
+  res.sendFile(filePath, err => {
+    if (err) res.status(404).json({ error: "Imagen de caja no encontrada" });
   });
 });
 export default router;

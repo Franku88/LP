@@ -10,8 +10,8 @@ type Skin = {
   weapon: string;
   category: string;
   rarity: {
-    name: string;
-    color: string;
+  name: string;
+  color: string;
   };
 };
 
@@ -22,7 +22,7 @@ export default function Skins() {
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = "http://127.0.0.1:3000";
+  const BASE_URL = "http://localhost:3000";
 
   useEffect(() => {
     setLoading(true);
