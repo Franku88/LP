@@ -22,12 +22,14 @@ export default function Skins() {
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  const BASE_URL = "http://localhost:3000";
+  const API_URL = process.env.EXPO_PUBLIC_API_URL!;
+  const ASSETS_URL = process.env.EXPO_PUBLIC_ASSETS_URL!;
+
 
   useEffect(() => {
     setLoading(true);
 
-    fetch(`${BASE_URL}/api/skins?page=${page}&limit=${perPage}`)
+    fetch(`${API_URL}/api/skins?page=${page}&limit=${perPage}`)
       .then(res => res.json())
       .then(json => {
         setSkins(json.data);
@@ -48,7 +50,7 @@ export default function Skins() {
       ]}
     >
       <Image
-        source={{ uri: `${BASE_URL}/api/skin-img/${item.id}` }}
+        source={{ uri: `${API_URL}/api/skin-img/${item.id}` }}
         style={styles.image}
         resizeMode="contain"
       />

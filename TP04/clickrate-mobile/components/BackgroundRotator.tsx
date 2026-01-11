@@ -5,8 +5,9 @@ import {
   StyleSheet,
 } from "react-native";
 
-const BASE_URL = "http://127.0.0.1:3000";
-
+const API_URL = process.env.EXPO_PUBLIC_API_URL!;
+const ASSETS_URL = process.env.EXPO_PUBLIC_ASSETS_URL!;
+console.log("API_URL:", API_URL);
 interface Props {
   activar?: boolean;
 }
@@ -17,7 +18,7 @@ export default function BackgroundRotator({ activar = true }: Props) {
   const fade = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
-    fetch(`${BASE_URL}/api/backgrounds`)
+    fetch(`${API_URL}/api/backgrounds`)
       .then(res => res.json())
       .then(json => setImages(json.data))
       .catch(err => console.error("Fondos:", err));
@@ -55,7 +56,7 @@ export default function BackgroundRotator({ activar = true }: Props) {
       ]}
     >
       <ImageBackground
-        source={{ uri: BASE_URL + images[index] }}
+        source={{ uri: API_URL + images[index] }}
         style={styles.image}
         resizeMode="cover"
       />

@@ -4,15 +4,12 @@ import path from "path";
 
 const router = Router();
 
-// =====================
+
 // PATHS
-// =====================
 const skinsPath = path.join(process.cwd(), "data", "skins.json");
 const cratesPath = path.join(process.cwd(), "data", "crates.json");
 
-// =====================
 // LOADERS
-// =====================
 function loadSkins() {
   return JSON.parse(fs.readFileSync(skinsPath, "utf-8"));
 }
@@ -21,9 +18,8 @@ function loadCrates() {
   return JSON.parse(fs.readFileSync(cratesPath, "utf-8"));
 }
 
-// =====================
-// BACKGROUNDS
-// =====================
+
+//IMG PARA EL CAMBIO DE FONDO (JSON CON RUTAS)
 router.get("/backgrounds", (req, res) => {
   res.json({
     data: [

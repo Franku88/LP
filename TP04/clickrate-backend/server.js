@@ -2,9 +2,11 @@ import express from "express";
 import cors from "cors";
 import path from "path";
 import apiRoutes from "./routes/api.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // middlewares
 app.use(cors());
@@ -21,7 +23,7 @@ app.use("/crates-img", express.static(path.join(process.cwd(), "img/crate")))
 app.use("/api", apiRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Backend corriendo en http://localhost:${PORT}`);
+ console.log("PORT:", process.env.PORT);
 });
 
 /*import express from "express"

@@ -6,7 +6,8 @@ import Main from "@/components/Main";
 
 import { useRouter, useLocalSearchParams } from "expo-router";
 
-const API_URL = "http://localhost:3000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL!;
+const ASSETS_URL = process.env.EXPO_PUBLIC_ASSETS_URL!;
 const LIMIT = 20;
 
 type Crate = {
@@ -47,48 +48,54 @@ export default function Crates() {
   }, [page]);
 
   return (
-    <View style={styles.container}>
-      {loading ? (
-        <ActivityIndicator size="large" />
-      ) : (
-        <View style={styles.grid}>
-           {crates.map(caja => (
-            <Pressable
-              key={caja.id}
-              style={styles.card}
-              onPress={() =>
-               router.push({
-                  pathname: "/case",
-                  params: { id: caja.id },
-               })
-            }
-            >
-              <Image
-                source={{ uri: `${API_URL}/crate-img/${caja.id}.png` }}
-                style={styles.image}
-              />
-              <Text style={styles.title}>{caja.name}</Text>
-            </Pressable>
-          ))}
+    <Main>
+        <View style={styles.container}>
+          {loading ? (
+            <ActivityIndicator size="large" />
+          ) : (
+            <View style={styles.grid}>
+              {crates.map(caja => (
+                <Pressable
+                  key={caja.id}
+                  style={styles.card}
+                  onPress={() =>
+                  router.push({
+                      pathname: "/case",
+                      params: { id: caja.id },
+                  })
+                }
+                >
+                  <Image
+                  source={{ uri: `${API_URL}/crates-img/${caja.id}.png` }}
+                  style={styles.image}
+                  resizeMode="contain"
+                  onError={(e) =>
+                    console.log("❌ Error cargando imagen:", caja.id, e.nativeEvent)
+                  }
+                />
+                  <Text style={styles.title}>{caja.name}</Text>
+                </Pressable>
+              ))}
+            </View>
+          )}
+
+          {/* PAGINACIÓN */}
+          <View style={styles.pagination}>
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
+              <Pressable
+                key={p}
+
+                style={[
+                  styles.pageButton,
+                  p === page && styles.pageSelected,
+                ]}
+              >
+                <Text>{p}</Text>
+              </Pressable>
+            ))}
+          </View>
         </View>
-      )}
-
-      {/* PAGINACIÓN */}
-      <View style={styles.pagination}>
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
-          <Pressable
-            key={p}
-
-            style={[
-              styles.pageButton,
-              p === page && styles.pageSelected,
-            ]}
-          >
-            <Text>{p}</Text>
-          </Pressable>
-        ))}
-      </View>
-    </View>
+    </Main>
   );
 }
 
@@ -113,15 +120,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  image: {
-    width: 120,
-    height: 120,
+  imageContainer: {
+    width: "100%",
+    height: 110,          // 🔑 altura fija
+    justifyContent: "center",
+    alignItems: "center",
     marginBottom: 8,
   },
+  image: {
+    width: "100%",
+    height: "100%",
+  },
 
+    
   title: {
     fontWeight: "bold",
     textAlign: "center",
+    fontSize: 14,
   },
 
   pagination: {
